@@ -1,0 +1,87 @@
+.personnel-grid-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 25px;
+    place-items: center;
+}
+
+.personnel-grid-photo {
+    background-color: var(--LightBlack);
+    border: 10px solid var(--LightBlack);
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.personnel-grid-subject {
+    background-color: var(--LightBlack);
+    border: 1px solid var(--Black);
+    color: var(--LightPurple);
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personnel-grid-name { 
+    font-size: 30px;
+    font-weight: bold;
+    height: 70%;
+}
+
+.personnel-grid-role { 
+    font-size: 15px;
+    height: 30%;
+}
+
+.personnel-grid-detail {
+    border: 1px solid var(--Black);
+    width: 75%;
+    text-align: left;
+}
+
+.personnel-info-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 'header header';
+    grid-gap: 10px;
+    padding: 10px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.personnel-info-grid-header {
+    background-color: var(--LightBlack);
+    grid-area: header;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.personnel-info-grid-icon {
+    margin-left: 20px;
+}
+
+.personnel-info-grid-info {
+    margin-right: 20px;
+}
+
+.download-btn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+}
+
+a.link {
+    color: var(--White);
+}
+
+a.link:hover {
+    color: var(--LightPurple);
+}

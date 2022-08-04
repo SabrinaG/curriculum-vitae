@@ -1,0 +1,637 @@
+{
+    "summary":"Sabrina Guia is currently a front-end developer at Edisoft - Software Development and Services Company, S.A. Works mostly with the following stack: HTML, CSS, JavaScript and ReactJs.\nShe holds a Bachelor degree in Bioengineering and Master degree in Electrical and Computer Engineering. Both graduations were concluded with excellent rating at the University of Beira Interior (UBI), Covilh\u00e3, Portugal. In degree obtained a final mark of 13,467 values, and later obtained a master's degree in classification 17.1 values. Highlights the microcontrollers programming skills in the acquisition, analysis and signal processing, obtained during her master dissertation, allowing their integration in the development of a new draft for the Standards family IEEE1451.\nAlso performed two extra-curricular training in the Laboratory MIsure, STRumentazione, ed ALgoritmi (MISTAL Lab) in Universit\u00e0 Degli Studi di Salerno (UNISA), Fisciano, Italy. At the same time, she always has sought to nurture the creative spirit by joining into groups and work teams on the music field, granting her invaluable opportunities to test and improve some social skills that she presents, such as: organisation, responsibility, communication and teamwork.\nTheir experiences and activities, personal and academic, allowed to become a Software Component Engineer at Edisoft - Software Development and Services Company, S.A. since 2015. She had the opportunity of working on a few different projects in order to grow an to acquire new technical skills. As aforementioned, she works mostly as a frontend developer with a desire to explore, learn and network with other realities. She is searching for new opportunities to grow both personally and professionally.",
+    "industryName":"Defense & Space",
+    "lastName":"Guia",
+    "student":false,
+    "geoCountryName":"Portugal",
+    "geoCountryUrn":"urn:li:fs_geo:100364837",
+    "geoLocationBackfilled":false,
+    "elt":false,
+    "birthDate":{
+       "month":12,
+       "year":1992,
+       "day":17
+    },
+    "industryUrn":"urn:li:fs_industry:1",
+    "firstName":"Sabrina",
+    "entityUrn":"urn:li:fs_profile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+    "geoLocation":{
+       "geoUrn":"urn:li:fs_geo:100092973"
+    },
+    "geoLocationName":"Lisbon, Lisbon",
+    "location":{
+       "basicLocation":{
+          "countryCode":"pt"
+       }
+    },
+    "headline":"Software Component Engineer at EDISOFT - Defence & Aerospace Technologies",
+    "displayPictureUrl":"https://media-exp2.licdn.com/dms/image/C4D03AQGKASeFBgj3Ng/profile-displayphoto-shrink_",
+    "img_100_100":"100_100/0/1640694029517?e=1662595200&v=beta&t=1r30p9gF2TiWgbpaaWYJNch__AzOhWbwat0KWrp0Ecw",
+    "img_200_200":"200_200/0/1640694029517?e=1662595200&v=beta&t=4coNF-_HC1tpQR18gDLdWSacVCOeSr1yAw3zCvI1kZ4",
+    "img_400_400":"400_400/0/1640694029517?e=1662595200&v=beta&t=3w-btujfrS7nSnvzHH9zSp44dIjNcmEM5JpHAF__dlI",
+    "img_800_800":"800_800/0/1640694029517?e=1662595200&v=beta&t=pTWdkj8g6800HCY0faAJfkcY4--NseHSWGbXn78JUf8",
+    "profile_id":"ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+    "profile_urn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+    "member_urn":"urn:li:member:108202131",
+    "experience":[
+       {
+          "courses":[
+             "urn:li:fs_course:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087820950)"
+          ],
+          "locationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "geoUrn":"urn:li:fs_geo:100914661",
+          "companyName":"EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+          "description":"ATFM is a cloud based solution for Air Traffic Flow Management\nsystems. Its developed by a SCRUM team really focused on delivering\nthe best quality solution for such a specific and critical area.\nThe following stack has been used: GitLab, Java, SpringBoot, SQL, HTM\nL, CSS, Redux, JavaScript and ReactJS.\nParticipation in the following main activities:\n\u25aa    Front-end developer in ReactJS\n\u25aa    Development of a couple of rest apis for basic knowledge\nacquisition of back-end structure",
+          "title":"Software Component Engineer",
+          "companyUrn":"urn:li:fs_miniCompany:26172",
+          "entityUrn":"urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637907582)",
+          "geoLocationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "timePeriod":{
+             "startDate":{
+                "month":2,
+                "year":2019
+             }
+          },
+          "company":{
+             "employeeCountRange":{
+                "start":51,
+                "end":200
+             },
+             "industries":[
+                "Defense & Space"
+             ]
+          },
+          "region":"urn:li:fs_region:(pt,0)",
+          "companyLogoUrl":"https://media-exp2.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_"
+       },
+       {
+          "locationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "entityUrn":"urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637912110)",
+          "geoLocationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "geoUrn":"urn:li:fs_geo:100914661",
+          "companyName":"EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+          "timePeriod":{
+             "endDate":{
+                "month":2,
+                "year":2019
+             },
+             "startDate":{
+                "month":8,
+                "year":2017
+             }
+          },
+          "description":"CleanSeaNet is the Near Real Time European satellite based oil spill\nmonitoring and vessel detection service. EDISOFT is part of the\nconsortium that provides the service to the participating coastal states\nand to EMSA.\nThe following technologies have been used: GitLab, Python, Bash,\nHTML, Bootstrap, CSS and AngularJS.\nParticipation in the following main activities:\n\u25aa    Development of a monitoring tool for interaction with the jobs\nrunning in the system and check their status.\n\u25aa    Development of software to manage the archiving system.",
+          "company":{
+             "employeeCountRange":{
+                "start":51,
+                "end":200
+             },
+             "industries":[
+                "Defense & Space"
+             ]
+          },
+          "title":"Software Component Engineer",
+          "region":"urn:li:fs_region:(pt,0)",
+          "companyUrn":"urn:li:fs_miniCompany:26172",
+          "companyLogoUrl":"https://media-exp2.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_"
+       },
+       {
+          "locationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "entityUrn":"urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637908455)",
+          "geoLocationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "geoUrn":"urn:li:fs_geo:100914661",
+          "companyName":"EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+          "timePeriod":{
+             "endDate":{
+                "month":8,
+                "year":2018
+             },
+             "startDate":{
+                "month":8,
+                "year":2016
+             }
+          },
+          "description":"IPSentinel is a platform based on ESA data hub that allows users to\nhave access to Sentinel satellites images on the Portugal area of\ninterest as well as product from SNIG, SNIAMB and SNIMAR\ncatalogues. EDISOFT is responsible for delivering processed images in\nSanta Maria, Azores, ground station.\nThe following technologies have been used: GitLab, Python, Bash, HTM\nL, Bootstrap and CSS.\nParticipation in the following main activities:\n\u25aa    Development of scripts to implement the main activities of the\nsystem\n\u25aa    Development of a project presentation page.\n\u25aa    Development of system documentation.",
+          "company":{
+             "employeeCountRange":{
+                "start":51,
+                "end":200
+             },
+             "industries":[
+                "Defense & Space"
+             ]
+          },
+          "title":"Software Component Engineer",
+          "region":"urn:li:fs_region:(pt,0)",
+          "companyUrn":"urn:li:fs_miniCompany:26172",
+          "companyLogoUrl":"https://media-exp2.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_"
+       },
+       {
+          "locationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "entityUrn":"urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637909159)",
+          "geoLocationName":"Pa\u00e7o de Arcos, Lisboa, Portugal",
+          "geoUrn":"urn:li:fs_geo:100914661",
+          "companyName":"EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+          "timePeriod":{
+             "endDate":{
+                "month":8,
+                "year":2018
+             },
+             "startDate":{
+                "month":2,
+                "year":2016
+             }
+          },
+          "description":"LSA SAF is a project sponsored by EUMETSAT and is currently focused\non the collection of data from MSG and EPS satellites and, in the\nfuture, MTG and EPS-SG. In order to respond to a wide community of\nusers, the need to acquire this information has led to the development\nof information systems in environments such as meteorology and\nclimate modeling, soils, disaster management and detection of climate\nchange. Since the beginning of the project, EDISOFT is responsible for\ndesigning, implementing, developing, verifying, validating and\nmaintaining the data processing and dissemination system under an\ninternational consortium led by IPMA.\nThe following technologies have been used: Visio, Entreprise Architect,\necFlow, OGE/SGE, Celery, SLURM, GitLab, Python, Bash and SQL.\nParticipation in the following main activities:\n\u25aa    Design of the system architecture.\n\u25aa    Prototyping for system upgrade.\n\u25aa    Development of software components.\n\u25aa    Database maintenance.\n\u25aa    Support to operational activities.\n\u25aa    Development of system documentation.",
+          "company":{
+             "employeeCountRange":{
+                "start":51,
+                "end":200
+             },
+             "industries":[
+                "Defense & Space"
+             ]
+          },
+          "title":"Software Component Engineer",
+          "region":"urn:li:fs_region:(pt,0)",
+          "companyUrn":"urn:li:fs_miniCompany:26172",
+          "companyLogoUrl":"https://media-exp2.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_"
+       }
+    ],
+    "education":[
+       {
+          "projects":[
+             "urn:li:fs_project:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087952334)"
+          ],
+          "entityUrn":"urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664267067)",
+          "school":{
+             "objectUrn":"urn:li:school:13888",
+             "entityUrn":"urn:li:fs_miniSchool:13888",
+             "active":true,
+             "schoolName":"Universit\u00e0 degli Studi di Salerno",
+             "trackingId":"oxO/UsGXTtuOJifmmeg9qA==",
+             "logoUrl":"https://media-exp2.licdn.com/dms/image/C4E0BAQEYMugzGY7uVg/company-logo_"
+          },
+          "grade":"Extra-curricular training",
+          "timePeriod":{
+             "endDate":{
+                "year":2015
+             },
+             "startDate":{
+                "year":2014
+             }
+          },
+          "description":"Developed tasks and skills acquired:\n- Acquisition of knowledge in the context of IoT;\n- Programming source code Matlab and C/C ++;\n- Execution of experimental tests in embedded systems;\n- Interface with Hardware (ARM microcontroller) and Sorftware (Keil);\n- Enhance the skills in foreign languages: English and Italian;\n- Teamwork.\nMentored by: Prof. Dr. Vincenzo Paciello and Prof. Dr. Antonio Pietrosanto",
+          "schoolName":"Universit\u00e0 degli Studi di Salerno",
+          "schoolUrn":"urn:li:fs_miniSchool:13888"
+       },
+       {
+          "projects":[
+             "urn:li:fs_project:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087995877)"
+          ],
+          "description":"Theme of the final graduation project:\n\"A Platform to Support the Development of Applications Based on the Segmentation and Labelling\nAlgorithm\"\nAdvised by: Prof. Dr. Ant\u00f3nio Esp\u00edrito Santo\nCo-advised by: Prof. Dr. Vincenzo Paciello",
+          "degreeName":"Master's degree",
+          "schoolUrn":"urn:li:fs_miniSchool:16092",
+          "entityUrn":"urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664263411)",
+          "school":{
+             "objectUrn":"urn:li:school:16092",
+             "entityUrn":"urn:li:fs_miniSchool:16092",
+             "active":true,
+             "schoolName":"Universidade da Beira Interior",
+             "trackingId":"czSAXvHWS6+vTFkXZHtyUA==",
+             "logoUrl":"https://media-exp2.licdn.com/dms/image/C4D0BAQHH5F7vd-eGFA/company-logo_"
+          },
+          "activities":" IEEE Student Branch",
+          "grade":"17",
+          "timePeriod":{
+             "endDate":{
+                "year":2015
+             },
+             "startDate":{
+                "year":2013
+             }
+          },
+          "schoolName":"Universidade da Beira Interior",
+          "fieldOfStudy":"Electrical and Computer Engineering in the Bionic Systems Branch",
+          "degreeUrn":"urn:li:fs_degree:500"
+       },
+       {
+          "courses":[
+             "urn:li:fs_course:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,9)",
+             "urn:li:fs_course:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087795581)"
+          ],
+          "description":"Theme of the final graduation project:\n\"Recupera\u00e7\u00e3o da Energia El\u00e9ctrica Produzida Pelas Plantas\"\nAdvised by: Prof. Dr. Ant\u00f3nio Esp\u00edrito Santo",
+          "degreeName":"Bachelor's degree",
+          "honors":[
+             "urn:li:fs_honor:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2088125964)"
+          ],
+          "schoolUrn":"urn:li:fs_miniSchool:16092",
+          "entityUrn":"urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664261629)",
+          "school":{
+             "objectUrn":"urn:li:school:16092",
+             "entityUrn":"urn:li:fs_miniSchool:16092",
+             "active":true,
+             "schoolName":"Universidade da Beira Interior",
+             "trackingId":"HoYJxaKCQhKS4mRkoh8c8A==",
+             "logoUrl":"https://media-exp2.licdn.com/dms/image/C4D0BAQHH5F7vd-eGFA/company-logo_"
+          },
+          "grade":"14 ",
+          "timePeriod":{
+             "endDate":{
+                "year":2013
+             },
+             "startDate":{
+                "year":2010
+             }
+          },
+          "schoolName":"Universidade da Beira Interior",
+          "fieldOfStudy":"Bioengineering",
+          "degreeUrn":"urn:li:fs_degree:200"
+       }
+    ],
+    "languages":[
+       {
+          "name":"Espanhol",
+          "proficiency":"ELEMENTARY"
+       },
+       {
+          "name":"Franc\u00eas",
+          "proficiency":"ELEMENTARY"
+       },
+       {
+          "name":"Ingl\u00eas",
+          "proficiency":"FULL_PROFESSIONAL"
+       },
+       {
+          "name":"Italiano",
+          "proficiency":"PROFESSIONAL_WORKING"
+       },
+       {
+          "name":"Portugu\u00eas",
+          "proficiency":"NATIVE_OR_BILINGUAL"
+       }
+    ],
+    "publications":[
+       {
+          "date":{
+             "month":5,
+             "year":2015,
+             "day":14
+          },
+          "name":"A comparison between FFT and MCT for period measurement  with an ARM microcontroller",
+          "publisher":"Instrumentation and Measurement Technology Conference (I2MTC)",
+          "description":"S. S. Guia, A. Esp\u00edrito Santo, V. Paciello, F. Abate, A. Pietrosanto, \u201cA comparison between FFT and MCT for period measurement  with an ARM microcontroller\u201d, in Instrumentation and Measurement Technology Conference (I2MTC), Pisa \u2013 Italy, 11-14 of May, 2015, pp. 1938-1942.",
+          "authors":[
+             {
+                "member":{
+                   "firstName":"Sabrina",
+                   "lastName":"Guia",
+                   "dashEntityUrn":"urn:li:fsd_profile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "occupation":"Software Component Engineer at EDISOFT - Defence & Aerospace Technologies",
+                   "objectUrn":"urn:li:member:108202131",
+                   "entityUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "backgroundImage":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"200_800/0/1640615325952?e=1662595200&v=beta&t=dBUazOMLqsSo_Gu4jXeSB6mJkW8rFWeZ3CuxR9-Tnms",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":1400,
+                               "fileIdentifyingUrlPathSegment":"350_1400/0/1640615325952?e=1662595200&v=beta&t=dLyoVtOWNp-02wBvlTYUss_i3POidxWBJZB5X8uqCoE",
+                               "expiresAt":1662595200000,
+                               "height":350
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D16AQG0pzbymrmj7Q/profile-displaybackgroundimage-shrink_"
+                      }
+                   },
+                   "publicIdentifier":"sabrina-guia",
+                   "picture":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":100,
+                               "fileIdentifyingUrlPathSegment":"100_100/0/1640694029517?e=1662595200&v=beta&t=1r30p9gF2TiWgbpaaWYJNch__AzOhWbwat0KWrp0Ecw",
+                               "expiresAt":1662595200000,
+                               "height":100
+                            },
+                            {
+                               "width":200,
+                               "fileIdentifyingUrlPathSegment":"200_200/0/1640694029517?e=1662595200&v=beta&t=4coNF-_HC1tpQR18gDLdWSacVCOeSr1yAw3zCvI1kZ4",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":400,
+                               "fileIdentifyingUrlPathSegment":"400_400/0/1640694029517?e=1662595200&v=beta&t=3w-btujfrS7nSnvzHH9zSp44dIjNcmEM5JpHAF__dlI",
+                               "expiresAt":1662595200000,
+                               "height":400
+                            },
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"800_800/0/1640694029517?e=1662595200&v=beta&t=pTWdkj8g6800HCY0faAJfkcY4--NseHSWGbXn78JUf8",
+                               "expiresAt":1662595200000,
+                               "height":800
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D03AQGKASeFBgj3Ng/profile-displayphoto-shrink_"
+                      }
+                   },
+                   "trackingId":"FDgF2T7dRuOf8WMIPzfgEg=="
+                },
+                "profileUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8"
+             }
+          ]
+       },
+       {
+          "date":{
+             "month":2,
+             "year":2015,
+             "day":5
+          },
+          "name":"Period measurement with an ARM microcontroller",
+          "publisher":"AISEM Annual Conference",
+          "description":"F. Abate, V. Paciello, A. Pietrosanto, S. S. Guia, A. Esp\u00edrito Santo, \u201cPeriod measurement with an ARM microcontroller\u201d, in AISEM Annual Conference, Trento \u2013 Italy, 3-5 of February, 2015, pp.1-4.",
+          "authors":[
+             {
+                "member":{
+                   "firstName":"Sabrina",
+                   "lastName":"Guia",
+                   "dashEntityUrn":"urn:li:fsd_profile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "occupation":"Software Component Engineer at EDISOFT - Defence & Aerospace Technologies",
+                   "objectUrn":"urn:li:member:108202131",
+                   "entityUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "backgroundImage":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"200_800/0/1640615325952?e=1662595200&v=beta&t=dBUazOMLqsSo_Gu4jXeSB6mJkW8rFWeZ3CuxR9-Tnms",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":1400,
+                               "fileIdentifyingUrlPathSegment":"350_1400/0/1640615325952?e=1662595200&v=beta&t=dLyoVtOWNp-02wBvlTYUss_i3POidxWBJZB5X8uqCoE",
+                               "expiresAt":1662595200000,
+                               "height":350
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D16AQG0pzbymrmj7Q/profile-displaybackgroundimage-shrink_"
+                      }
+                   },
+                   "publicIdentifier":"sabrina-guia",
+                   "picture":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":100,
+                               "fileIdentifyingUrlPathSegment":"100_100/0/1640694029517?e=1662595200&v=beta&t=1r30p9gF2TiWgbpaaWYJNch__AzOhWbwat0KWrp0Ecw",
+                               "expiresAt":1662595200000,
+                               "height":100
+                            },
+                            {
+                               "width":200,
+                               "fileIdentifyingUrlPathSegment":"200_200/0/1640694029517?e=1662595200&v=beta&t=4coNF-_HC1tpQR18gDLdWSacVCOeSr1yAw3zCvI1kZ4",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":400,
+                               "fileIdentifyingUrlPathSegment":"400_400/0/1640694029517?e=1662595200&v=beta&t=3w-btujfrS7nSnvzHH9zSp44dIjNcmEM5JpHAF__dlI",
+                               "expiresAt":1662595200000,
+                               "height":400
+                            },
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"800_800/0/1640694029517?e=1662595200&v=beta&t=pTWdkj8g6800HCY0faAJfkcY4--NseHSWGbXn78JUf8",
+                               "expiresAt":1662595200000,
+                               "height":800
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D03AQGKASeFBgj3Ng/profile-displayphoto-shrink_"
+                      }
+                   },
+                   "trackingId":"FDgF2T7dRuOf8WMIPzfgEg=="
+                },
+                "profileUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8"
+             }
+          ]
+       },
+       {
+          "date":{
+             "month":7,
+             "year":2014,
+             "day":18
+          },
+          "name":"A Distributed Sensor Network Powered by Energy Harvesting Technologies for Wastewater Process Monitoring",
+          "publisher":"Proceedings of the International Congress on Water, Waste and Energy Management (EWWM2014)",
+          "description":"P. M. D. Serra, S. S. Guia, E. J. S. Teixeira, A. Albuquerque, A. Esp\u00edrito Santo, M. J. C. Magrinho, \u201cA Distributed Sensor Network Powered by Energy Harvesting Technologies for Wastewater Process Monitoring\u201d, in Proceedings of the International Congress on Water, Waste and Energy Management, (EWWM2014), Oporto \u2013 Portugal, 17-18 of July, 2014.",
+          "authors":[
+             {
+                "member":{
+                   "firstName":"Sabrina",
+                   "lastName":"Guia",
+                   "dashEntityUrn":"urn:li:fsd_profile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "occupation":"Software Component Engineer at EDISOFT - Defence & Aerospace Technologies",
+                   "objectUrn":"urn:li:member:108202131",
+                   "entityUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "backgroundImage":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"200_800/0/1640615325952?e=1662595200&v=beta&t=dBUazOMLqsSo_Gu4jXeSB6mJkW8rFWeZ3CuxR9-Tnms",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":1400,
+                               "fileIdentifyingUrlPathSegment":"350_1400/0/1640615325952?e=1662595200&v=beta&t=dLyoVtOWNp-02wBvlTYUss_i3POidxWBJZB5X8uqCoE",
+                               "expiresAt":1662595200000,
+                               "height":350
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D16AQG0pzbymrmj7Q/profile-displaybackgroundimage-shrink_"
+                      }
+                   },
+                   "publicIdentifier":"sabrina-guia",
+                   "picture":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":100,
+                               "fileIdentifyingUrlPathSegment":"100_100/0/1640694029517?e=1662595200&v=beta&t=1r30p9gF2TiWgbpaaWYJNch__AzOhWbwat0KWrp0Ecw",
+                               "expiresAt":1662595200000,
+                               "height":100
+                            },
+                            {
+                               "width":200,
+                               "fileIdentifyingUrlPathSegment":"200_200/0/1640694029517?e=1662595200&v=beta&t=4coNF-_HC1tpQR18gDLdWSacVCOeSr1yAw3zCvI1kZ4",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":400,
+                               "fileIdentifyingUrlPathSegment":"400_400/0/1640694029517?e=1662595200&v=beta&t=3w-btujfrS7nSnvzHH9zSp44dIjNcmEM5JpHAF__dlI",
+                               "expiresAt":1662595200000,
+                               "height":400
+                            },
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"800_800/0/1640694029517?e=1662595200&v=beta&t=pTWdkj8g6800HCY0faAJfkcY4--NseHSWGbXn78JUf8",
+                               "expiresAt":1662595200000,
+                               "height":800
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D03AQGKASeFBgj3Ng/profile-displayphoto-shrink_"
+                      }
+                   },
+                   "trackingId":"FDgF2T7dRuOf8WMIPzfgEg=="
+                },
+                "profileUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8"
+             }
+          ]
+       },
+       {
+          "date":{
+             "month":9,
+             "year":2013,
+             "day":14
+          },
+          "name":"Estudante de Mestrado em Engenharia Electrot\u00e9cnica e de Computadores no Ramo de Sistemas Bi\u00f3nicos",
+          "publisher":"ICEUBI2013 - International Conference on Engineering for Economic Development",
+          "description":"S. S. Guia, A. Esp\u00edrito Santo, \u201cAvalia\u00e7\u00e3o do Potencial de Utiliza\u00e7\u00e3o de uma Bateria Biol\u00f3gica em Aplica\u00e7\u00f5es de Colheita de Energia\u201d, in International Conference on Engineering, Engineering for Economic Development, (ICEUBI2013), Covilh\u00e3 \u2013 Portugal, 27-28 of November, 2013.",
+          "authors":[
+             {
+                "member":{
+                   "firstName":"Sabrina",
+                   "lastName":"Guia",
+                   "dashEntityUrn":"urn:li:fsd_profile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "occupation":"Software Component Engineer at EDISOFT - Defence & Aerospace Technologies",
+                   "objectUrn":"urn:li:member:108202131",
+                   "entityUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8",
+                   "backgroundImage":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"200_800/0/1640615325952?e=1662595200&v=beta&t=dBUazOMLqsSo_Gu4jXeSB6mJkW8rFWeZ3CuxR9-Tnms",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":1400,
+                               "fileIdentifyingUrlPathSegment":"350_1400/0/1640615325952?e=1662595200&v=beta&t=dLyoVtOWNp-02wBvlTYUss_i3POidxWBJZB5X8uqCoE",
+                               "expiresAt":1662595200000,
+                               "height":350
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D16AQG0pzbymrmj7Q/profile-displaybackgroundimage-shrink_"
+                      }
+                   },
+                   "publicIdentifier":"sabrina-guia",
+                   "picture":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":100,
+                               "fileIdentifyingUrlPathSegment":"100_100/0/1640694029517?e=1662595200&v=beta&t=1r30p9gF2TiWgbpaaWYJNch__AzOhWbwat0KWrp0Ecw",
+                               "expiresAt":1662595200000,
+                               "height":100
+                            },
+                            {
+                               "width":200,
+                               "fileIdentifyingUrlPathSegment":"200_200/0/1640694029517?e=1662595200&v=beta&t=4coNF-_HC1tpQR18gDLdWSacVCOeSr1yAw3zCvI1kZ4",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":400,
+                               "fileIdentifyingUrlPathSegment":"400_400/0/1640694029517?e=1662595200&v=beta&t=3w-btujfrS7nSnvzHH9zSp44dIjNcmEM5JpHAF__dlI",
+                               "expiresAt":1662595200000,
+                               "height":400
+                            },
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"800_800/0/1640694029517?e=1662595200&v=beta&t=pTWdkj8g6800HCY0faAJfkcY4--NseHSWGbXn78JUf8",
+                               "expiresAt":1662595200000,
+                               "height":800
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C4D03AQGKASeFBgj3Ng/profile-displayphoto-shrink_"
+                      }
+                   },
+                   "trackingId":"FDgF2T7dRuOf8WMIPzfgEg=="
+                },
+                "profileUrn":"urn:li:fs_miniProfile:ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8"
+             },
+             {
+                "member":{
+                   "firstName":"Ant\u00f3nio",
+                   "lastName":"Esp\u00edrito Santo",
+                   "dashEntityUrn":"urn:li:fsd_profile:ACoAAAcC1V4BSpdsYSAfifK-ovcXIbhQuUs9y3A",
+                   "occupation":"Professor Auxiliar na Universidade da Beira Interior",
+                   "objectUrn":"urn:li:member:117626206",
+                   "entityUrn":"urn:li:fs_miniProfile:ACoAAAcC1V4BSpdsYSAfifK-ovcXIbhQuUs9y3A",
+                   "publicIdentifier":"ant\u00f3nio-esp\u00edrito-santo-87a48633",
+                   "picture":{
+                      "com.linkedin.common.VectorImage":{
+                         "artifacts":[
+                            {
+                               "width":100,
+                               "fileIdentifyingUrlPathSegment":"100_100/0/1516532153181?e=1662595200&v=beta&t=h2ySUwqIoRxaH6EzZbfpkyQAjRNvKW4RtJSZ5qr1KSY",
+                               "expiresAt":1662595200000,
+                               "height":100
+                            },
+                            {
+                               "width":200,
+                               "fileIdentifyingUrlPathSegment":"200_200/0/1516532153181?e=1662595200&v=beta&t=zF8ObYDU4dYslPEAVf9EjDB5IRAAQ611uXCVX22L6Ns",
+                               "expiresAt":1662595200000,
+                               "height":200
+                            },
+                            {
+                               "width":400,
+                               "fileIdentifyingUrlPathSegment":"400_400/0/1516532153181?e=1662595200&v=beta&t=rK5mYCbnLEcV7snQw6uFUswcD-Y6HenukCmwQsh6150",
+                               "expiresAt":1662595200000,
+                               "height":400
+                            },
+                            {
+                               "width":800,
+                               "fileIdentifyingUrlPathSegment":"800_800/0/1516532153181?e=1662595200&v=beta&t=QsV48OukA_kMStROCiSesIqiopvInv9115IiAGvLxME",
+                               "expiresAt":1662595200000,
+                               "height":800
+                            }
+                         ],
+                         "rootUrl":"https://media-exp2.licdn.com/dms/image/C5603AQG-fTVqlXJXHQ/profile-displayphoto-shrink_"
+                      }
+                   },
+                   "trackingId":"64fCAXilTbCqV9usXjo2Lg=="
+                },
+                "profileUrn":"urn:li:fs_miniProfile:ACoAAAcC1V4BSpdsYSAfifK-ovcXIbhQuUs9y3A"
+             }
+          ]
+       }
+    ],
+    "certifications":[
+       
+    ],
+    "volunteer":[
+       
+    ],
+    "honors":[
+       {
+          "description":"Constituent element of the winning team of the IT Challenge organised by Deloitte",
+          "occupation":"urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664261629)",
+          "title":"Team member",
+          "issueDate":{
+             "month":11,
+             "year":2013
+          }
+       }
+    ]
+ }

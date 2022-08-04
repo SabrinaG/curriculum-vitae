@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '../src/assets/common.scss';
 import './index.css';
-import App from './App';
+import App from './containers/App/App';
 import reportWebVitals from './reportWebVitals';
+import { ResumeProvider } from './context/ResumeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ResumeProvider>
+      <App />
+    </ResumeProvider>
   </React.StrictMode>
 );
 

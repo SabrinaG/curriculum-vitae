@@ -1,0 +1,23 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* .layout > * {
+  padding: 20px;
+} */
+
+.personnel {
+  width: 30%;
+  color: var(--White);
+  background-color: var(--DarkBlue);
+}
+
+.professional {
+  width: 70%;
+  color: var(--White);
+  background-color: var(--LightPurple);
+}
