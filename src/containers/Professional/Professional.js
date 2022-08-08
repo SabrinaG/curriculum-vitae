@@ -34,7 +34,7 @@ function Professional() {
             <a className="pj-link" href={ProjectsLinks.LSAF_SAF}>LSA SAF</a>
           </div>
           <div className="professional-info-grid-logo">
-            <img src={edisoft} alt="edisoft" style={logoStyles} />
+            <img src={edisoft} alt="Edisoft" title="Edisoft" style={logoStyles} />
           </div>
         </div>
 
@@ -53,7 +53,7 @@ function Professional() {
             <div className="sub-title">Extra-curricular Training</div>
           </div>  
           <div className="professional-info-grid-logo">
-            <img src={unisa} alt="unisa" style={logoStyles} />
+            <img src={unisa} alt="UNISA" title="UNISA" style={logoStyles} />
           </div>
         </div>
 
@@ -65,7 +65,7 @@ function Professional() {
             <div className="sub-title">Master Degree</div>
           </div>
           <div className="professional-info-grid-logo">
-            <img src={ubi} alt="ubi" style={logoStyles} />
+            <img src={ubi} alt="UBI" title="UBI" style={logoStyles} />
           </div>
           <div className="professional-info-grid-icon">20/09/2010 – 02/10/2013</div>
           <div className="professional-info-grid-info">
@@ -79,16 +79,16 @@ function Professional() {
           <div className="professional-info-grid-header">SKILLS</div>
           <div className="professional-logo-grid">
             <div className="grid-logo">
-              <img src={html5} alt="html5" style={logoStyles} />
+              <img src={html5} alt="HTML5" title="HTML5" style={logoStyles} />
             </div>
             <div className="grid-logo">
-              <img src={react} alt="react" style={logoStyles} />
+              <img src={react} alt="React" title="React" style={logoStyles} />
             </div>
             <div className="grid-logo">
-              <img src={javaScript} alt="javaScript" style={logoStyles} />
+              <img src={javaScript} alt="JavaScript" title="JavaScript" style={logoStyles} />
             </div>
             <div className="grid-logo">
-              <img src={css3} alt="css3" style={logoStyles} />
+              <img src={css3} alt="CSS3" title="CSS3" style={logoStyles} />
             </div>
           </div>
         </div>
