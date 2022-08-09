@@ -1,5 +1,5 @@
-import Professional from '../Professional/Professional';
-import Personnel from '../Personnel/Personnel';
+import Professional from '../../components/Professional/Professional';
+import Personnel from '../../components/Personnel/Personnel';
 import './Layout.css';
 
 function Layout() {
