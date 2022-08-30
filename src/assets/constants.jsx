@@ -7,7 +7,7 @@ export const ContactsInfo = Object.freeze({
   PHONE: '+351 962 393 164',
   LOCATION: 'Lisbon, Portugal',
   EMAIL: 'sabrina-guia@hotmail.com',
-  GITHUB: 'https://github.com/SabrinaG',
+  GITHUB: 'https://github.com/SabrinaG/curriculum-vitae',
   LINKEDIN: 'https://www.linkedin.com/in/sabrina-guia',
 });
 
@@ -29,5 +29,9 @@ export const ProjectsLinks = Object.freeze({
 });
 
 export const backendApi = Object.freeze({
-  URL_ENDPOINT: 'https:/localhost:8080/xpto',
+  API_IP: '51.178.83.45',
+  API_PORT: ':5000',
+  ENDPOINT_PROFILE: '/full_profile',
+  ENDPOINT_EXPEIENCE: '/experience',
+  ENDPOINT_EDUCATION: '/education',
 });

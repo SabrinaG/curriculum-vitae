@@ -55,26 +55,30 @@ function Personnel() {
             <Email style={iconStyles}/>
           </div>
           <div className="personnel-info-grid-info">{ContactsInfo.EMAIL}</div>
+        </div>
+                
+        <div className="personnel-info-grid-container">
+          <div className="personnel-info-grid-header">LINKS</div>
+          <div className="personnel-info-grid-icon">
+            <GitHub style={iconStyles}/>
+          </div>
+          <a className="link" href={ContactsInfo.GITHUB} target="_blank" rel="noreferrer">
+            <div className="personnel-info-grid-info">Git repo</div>
+          </a>
+          <div className="personnel-info-grid-icon">
+            <LinkedIn style={iconStyles}/>
+          </div>
+          <a className="link" href={ContactsInfo.LINKEDIN} target="_blank" rel="noreferrer">
+            <div className="personnel-info-grid-info">LinkedIn profile</div>
+          </a>
           <div className="personnel-info-grid-icon">
             <CloudDownload style={iconStyles}/>
           </div>
           <div className="personnel-info-grid-info">
             <a className="link" href={myCV} download="cv_sguia.pdf">Curriculum Vitae</a>
           </div>
-          <div className="personnel-info-grid-icon">
-            <GitHub style={iconStyles}/>
-          </div>
-          <a className="link" href={ContactsInfo.GITHUB} target="_blank" rel="noreferrer">
-            <div className="personnel-info-grid-info">{ContactsInfo.GITHUB}</div>
-          </a>
-          <div className="personnel-info-grid-icon">
-            <LinkedIn style={iconStyles}/>
-          </div>
-          <a className="link" href={ContactsInfo.LINKEDIN} target="_blank" rel="noreferrer">
-            <div className="personnel-info-grid-info">{ContactsInfo.LINKEDIN}</div>
-          </a>
         </div>
-                
+
         <div className="personnel-info-grid-container">
           <div className="personnel-info-grid-header">LANGUAGES</div>
           <div className="personnel-info-grid-icon">

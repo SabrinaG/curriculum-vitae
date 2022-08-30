@@ -67,7 +67,8 @@
     padding: 10px;
 }
 
-a.pj-link {
+a.pj-link,
+a.pj-link:visited {
     color: var(--Black);
     text-decoration: none;
     font-size: 18px;

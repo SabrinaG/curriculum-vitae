@@ -6,6 +6,7 @@ test('renders learn react link', () => {
   render(<ResumeProvider><App /></ResumeProvider>);
   
   expect(screen.getByText(/CONTACT/i)).toBeInTheDocument();
+  expect(screen.getByText(/LINKS/i)).toBeInTheDocument();
   expect(screen.getByText(/LANGUAGES/i)).toBeInTheDocument();
   expect(screen.getByText(/HOBBIES/i)).toBeInTheDocument();
   expect(screen.getByText(/EXPERIENCE/i)).toBeInTheDocument();

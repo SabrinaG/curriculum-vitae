@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "yarn test --coverage --whatchAll=false",
+    "coverage": "react-scripts test --coverage --whatchAll=true",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -51,7 +51,7 @@
     grid-template-areas: 'header header';
     grid-gap: 10px;
     padding: 10px;
-    font-size: 13px;
+    font-size: 14px;
     align-items: center;
 }
 
@@ -69,6 +69,7 @@
 
 .personnel-info-grid-info {
     margin-right: 20px;
+    word-break: break-all;
 }
 
 .download-btn {
@@ -78,7 +79,8 @@
     padding: 0;
 }
 
-a.link {
+a.link,
+a.link:visited {
     color: var(--White);
 }
 
