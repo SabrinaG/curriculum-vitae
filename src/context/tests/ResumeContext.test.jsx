@@ -3,14 +3,16 @@ import { useResumeDefaultContext } from '../ResumeContext';
 
 describe('useResumeDefaultContext.ResumeContext tests', () => {
   let ctx;
+  const { result } = renderHook(() => useResumeDefaultContext());
 
   beforeEach(() => {
-    const { result } = renderHook(() => useResumeDefaultContext());
     ctx = result;
   });
 
   it('Should create the context', () => {
     expect(ctx.current.name).toBeDefined();
     expect(ctx.current.role).toBeDefined();
+    expect(ctx.current.setName).toBeDefined();
+    expect(ctx.current.setRole).toBeDefined();
   });
 });

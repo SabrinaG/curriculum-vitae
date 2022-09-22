@@ -13,6 +13,8 @@ export const useResumeDefaultContext = () => {
   return {
     name,
     role,
+    setName,
+    setRole,
   };
 };
 export const ResumeProvider = ({ children }) => {

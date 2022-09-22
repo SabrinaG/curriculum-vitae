@@ -1,6 +1,7 @@
 export const PersonnelInfo = Object.freeze({
   NAME: 'Sabrina Guia',
   ROLE: 'Front-end Developer',
+  LICENCE: 'B1, B',
 });
 
 export const ContactsInfo = Object.freeze({
@@ -15,6 +16,18 @@ export const LanguagesInfo = Object.freeze(['Portuguese', 'English']);
 
 export const HobbiesInfo = Object.freeze(['Music', 'CrossFit', 'Traveling', 'Photography']);
 
+export const SkillsList = Object.freeze({
+  HTML5: 'html5',
+  REACT: 'react',
+  JavaScript: 'javaScript',
+  CSS3: 'css3',
+});
+
+export const UniversitiiesMap = Object.freeze({
+  UNISA: 'Università degli Studi di Salerno',
+  UBI: 'Universidade da Beira Interior',
+});
+
 export const EntetiesLinks = Object.freeze({
   EDISOFT: 'https://www.edisoft.pt/',
   UNISA: 'https://www.unisa.it/',
@@ -23,15 +36,16 @@ export const EntetiesLinks = Object.freeze({
 
 export const ProjectsLinks = Object.freeze({
   ATFM: 'https://www.thalesgroup.com/en/markets/aerospace/air-traffic-management/automation/topsky-flow-manager',
-  CLEAN_SEA_NET: 'https://portal.emsa.europa.eu/web/csn',
-  IP_SENTINEL: 'https://ipsentinel.pt/',
-  LSAF_SAF: 'https://landsaf.ipma.pt/en/',
+  CleanSeaNet: 'https://portal.emsa.europa.eu/web/csn',
+  IPSentinel: 'https://ipsentinel.pt/',
+  LSA: 'https://landsaf.ipma.pt/en/',
 });
 
 export const backendApi = Object.freeze({
+  API_HEADER: 'http://',
   API_IP: '51.178.83.45',
   API_PORT: ':5000',
-  ENDPOINT_PROFILE: '/full_profile',
-  ENDPOINT_EXPEIENCE: '/experience',
-  ENDPOINT_EDUCATION: '/education',
+  API_ENDPOINT_PROFILE: '/full_profile',
+  API_ENDPOINT_EXPEIENCE: '/experience',
+  API_ENDPOINT_EDUCATION: '/education',
 });

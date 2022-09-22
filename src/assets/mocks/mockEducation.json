@@ -1,0 +1,93 @@
+{
+  "education": [
+    {
+      "description": "Developed tasks and skills acquired:\n- Acquisition of knowledge in the context of IoT;\n- Programming source code Matlab and C/C ++;\n- Execution of experimental tests in embedded systems;\n- Interface with Hardware (ARM microcontroller) and Sorftware (Keil);\n- Enhance the skills in foreign languages: English and Italian;\n- Teamwork.\nMentored by: Prof. Dr. Vincenzo Paciello and Prof. Dr. Antonio Pietrosanto",
+      "entityUrn": "urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664267067)",
+      "grade": "Extra-curricular training",
+      "projects": [
+        "urn:li:fs_project:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087952334)"
+      ],
+      "school": {
+        "active": true,
+        "entityUrn": "urn:li:fs_miniSchool:13888",
+        "logoUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQEYMugzGY7uVg/company-logo_",
+        "objectUrn": "urn:li:school:13888",
+        "schoolName": "Universit\u00e0 degli Studi di Salerno",
+        "trackingId": "OWmi6gXXR3WUVoEqv1wsdw=="
+      },
+      "schoolName": "Universit\u00e0 degli Studi di Salerno",
+      "schoolUrn": "urn:li:fs_miniSchool:13888",
+      "timePeriod": {
+        "endDate": {
+          "year": 2015
+        },
+        "startDate": {
+          "year": 2014
+        }
+      }
+    },
+    {
+      "activities": " IEEE Student Branch",
+      "degreeName": "Master's degree",
+      "degreeUrn": "urn:li:fs_degree:500",
+      "description": "Theme of the final graduation project:\n\"A Platform to Support the Development of Applications Based on the Segmentation and Labelling\nAlgorithm\"\nAdvised by: Prof. Dr. Ant\u00f3nio Esp\u00edrito Santo\nCo-advised by: Prof. Dr. Vincenzo Paciello",
+      "entityUrn": "urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664263411)",
+      "fieldOfStudy": "Electrical and Computer Engineering in the Bionic Systems Branch",
+      "grade": "17",
+      "projects": [
+        "urn:li:fs_project:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087995877)"
+      ],
+      "school": {
+        "active": true,
+        "entityUrn": "urn:li:fs_miniSchool:16092",
+        "logoUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQHH5F7vd-eGFA/company-logo_",
+        "objectUrn": "urn:li:school:16092",
+        "schoolName": "Universidade da Beira Interior",
+        "trackingId": "oinkCdwxSYqlv0RX4fqi0w=="
+      },
+      "schoolName": "Universidade da Beira Interior",
+      "schoolUrn": "urn:li:fs_miniSchool:16092",
+      "timePeriod": {
+        "endDate": {
+          "year": 2015
+        },
+        "startDate": {
+          "year": 2013
+        }
+      }
+    },
+    {
+      "courses": [
+        "urn:li:fs_course:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,9)",
+        "urn:li:fs_course:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087795581)"
+      ],
+      "degreeName": "Bachelor's degree",
+      "degreeUrn": "urn:li:fs_degree:200",
+      "description": "Theme of the final graduation project:\n\"Recupera\u00e7\u00e3o da Energia El\u00e9ctrica Produzida Pelas Plantas\"\nAdvised by: Prof. Dr. Ant\u00f3nio Esp\u00edrito Santo",
+      "entityUrn": "urn:li:fs_education:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,664261629)",
+      "fieldOfStudy": "Bioengineering",
+      "grade": "14 ",
+      "honors": [
+        "urn:li:fs_honor:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2088125964)"
+      ],
+      "school": {
+        "active": true,
+        "entityUrn": "urn:li:fs_miniSchool:16092",
+        "logoUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQHH5F7vd-eGFA/company-logo_",
+        "objectUrn": "urn:li:school:16092",
+        "schoolName": "Universidade da Beira Interior",
+        "trackingId": "aP8MRJ5QQcKgKv3yrYgf1Q=="
+      },
+      "schoolName": "Universidade da Beira Interior",
+      "schoolUrn": "urn:li:fs_miniSchool:16092",
+      "timePeriod": {
+        "endDate": {
+          "year": 2013
+        },
+        "startDate": {
+          "year": 2010
+        }
+      }
+    }
+  ]
+}
