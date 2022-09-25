@@ -1,7 +1,8 @@
 /* eslint-disable import/named */
-import { screen } from '@testing-library/react';
+import { screen, fireEvent } from '@testing-library/react';
 import { PersonnelInfo, SkillsList } from '../../../assets/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
+import { convertHexToRGBA } from '../../../assets/utils/func.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
 import { ResumeProvider } from '../../../context/ResumeContext';
 import Professional from '../Professional';
@@ -61,6 +62,22 @@ describe('components.Professional tests', () => {
     expect(logoImage.title).toBeDefined();
     expect(logoImage.style).toBeDefined();
   });
+
+  // it('should link style on mouseover projects', () => {
+  //   const store = configureTestStore({ ...mockStore });
+  //   renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+
+  //   expect(screen.getAllByText('EXPERIENCE')).toBeTruthy();
+  //   expect(screen.getAllByTestId('experience-link')).toHaveLength(4);
+
+  //   const linksList = screen.getAllByTestId('experience-link');
+
+  //   expect(linksList[0]).toHaveStyle({ color: "#000000" });
+  
+  //   fireEvent.mouseOver(linksList[0]);
+
+  //   expect(linksList[0]).toHaveStyle({ color: "#021040" });
+  // });
 
   it('should render intership information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });

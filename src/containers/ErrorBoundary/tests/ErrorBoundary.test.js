@@ -8,15 +8,15 @@ describe('contairners.ErrorBoundary tests', () => {
     const testError = 'Fail to render';
     const testString = 'test component child';
 
-    const Child = () => { throw new Error(testError); }
+    const Child = () => { throw new Error(testError); };
 
     renderWithProviders(
       <ErrorBoundary component={testString}>
         <Child />
-      </ErrorBoundary>
+      </ErrorBoundary>,
     );
 
-    const errorMessage = screen.getByTestId('error-boundary-message').innerHTML
-    expect(errorMessage).toBe(`${testError} ${testString}.`)
+    const errorMessage = screen.getByTestId('error-boundary-message').innerHTML;
+    expect(errorMessage).toBe(`${testError} ${testString}.`);
   });
 });

@@ -68,7 +68,7 @@ function Professional() {
           {experienceData && Object.keys(experienceData).map((company, companyIndex) => {
             return (Object.keys(experienceData[company]).map((project, projectIndex) => {
               return (
-                <Fragment>
+                <Fragment key={`xp-${companyIndex}-${projectIndex}`}>
                   <div className="professional-info-grid-date" data-testid="professional-experience-date">
                     {`${experienceData[company][project].start} to ${experienceData[company][project].stop}`}
                   </div>
@@ -129,11 +129,13 @@ function Professional() {
         <div className="professional-info-grid-container-skills" data-testid="professional-skills-container">
           <div className="professional-info-grid-header" data-testid="professional-info-grid-header">SKILLS</div>
           <div className="professional-logo-grid" data-testid="professional-logo-grid">
-            {Object.keys(SkillsList).map((skill) => {
+            {Object.keys(SkillsList).map((skill, index) => {
               return (
-                <div className="grid-logo" data-testid="grid-logo">
-                  <img src={require(`../../assets/images/${SkillsList[skill]}.svg`)} alt={skill} title={skill} data-testid={skill} style={logoStyles} />
-                </div>
+                <Fragment key={`sk-${index}`}>
+                  <div className="grid-logo" data-testid="grid-logo">
+                    <img src={require(`../../assets/images/${SkillsList[skill]}.svg`)} alt={skill} title={skill} data-testid={skill} style={logoStyles} />
+                  </div>
+                </Fragment>
               )
             })}
           </div>

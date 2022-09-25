@@ -19,7 +19,6 @@ import './Layout.css';
 
 // ===== CLASS COMPONENT SRC CODE =====
 export class Layout extends Component {
-
   render() {
     return (
       <div className="layout" data-testid="layout">

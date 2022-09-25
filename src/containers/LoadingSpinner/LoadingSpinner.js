@@ -19,9 +19,9 @@ class LoadingSpinner extends React.Component {
           width="100"
           visible={true}
         />
-        <div className="spinner-label" data-testid="spinner-label" style={{ color: this.props.labelColor }}>Loading...</div>
+        <div className="spinner-label" data-testid="spinner-label" style={{ color: this.props.labelColor }}> Loading... </div>
       </div>
-    )
+    );
   }
 }
 

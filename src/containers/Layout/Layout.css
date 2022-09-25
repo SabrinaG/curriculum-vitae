@@ -21,3 +21,13 @@
   color: var(--White);
   background-color: var(--LightPurple);
 }
+
+@media (max-width: 1080px) {
+  .layout {
+    flex-wrap: wrap;
+  }
+  .layout .personnel, 
+  .layout .professional {
+    width: 100%;
+  }
+}

@@ -9,7 +9,7 @@ describe('contairners.LoadingSpinner tests', () => {
     const testColor = 'red';
 
     renderWithProviders(
-      <LoadingSpinner labelColor={testColor} />
+      <LoadingSpinner labelColor={testColor} />,
     );
 
     expect(screen.getByTestId('loading-spinner')).toBeTruthy();

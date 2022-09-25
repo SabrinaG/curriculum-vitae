@@ -11,14 +11,15 @@ import {
   PhotoCamera
 } from '@material-ui/icons';
 import avatar from '../../assets/images/avatar.svg';
-import { Fragment, useState, useEffect } from 'react';
+import { Fragment, useState, useEffect, useRef, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ContactsInfo, LanguagesInfo, HobbiesInfo } from '../../assets/constants';
 import { useResumeContext } from '../../context/ResumeContext';
+import DescriptionModal from '../Modal/Modal';
 import ErrorBoundary from '../../containers/ErrorBoundary/ErrorBoundary';
 import LoadingSpinner from '../../containers/LoadingSpinner/LoadingSpinner';
 import { fetchProfileInfo } from '../../store/profile/actions';
-import { selectLoadingProfileInfo, selectProfileInfo } from '../../store/profile/selectors';
+import { selectLoadingProfileInfo, selectProfileInfo, selectProfileData } from '../../store/profile/selectors';
 import './Personnel.css';
 
 const imageStyles = { width: '250px', height: '250px', borderRadius: '50%' };
@@ -30,12 +31,51 @@ const myCV = require("../../assets/cv.pdf");
 function Personnel() {
   const dispatch = useDispatch();
   const resumeContext = useResumeContext();
+  
+  const ref = useRef(null);
 
+  const [showModal, setShowModal] = useState(false);
   const [loadingState, setLoadingState] = useState(null);
   const [errorState, setErrorState] = useState(null);
 
   const loadingProfileInfo = useSelector(selectLoadingProfileInfo);
   const profileInfo = useSelector(selectProfileInfo);
+  const profileData = useSelector(selectProfileData);
+
+  const toogleModalShow = useCallback(() => {
+    setShowModal(!showModal)
+  }, [showModal])
+
+  const showDescriptionModal = useCallback(() => {
+    return(
+      <ErrorBoundary component="desciption modal">
+        <DescriptionModal
+          modalTitle={'Motivation'}
+          modalText={profileData?.summary}
+          handleClose={toogleModalShow}
+        />
+      </ErrorBoundary>
+    )
+  }, [profileData?.summary, toogleModalShow])
+
+  useEffect(() => {
+    const handlemouseover = event => {
+      toogleModalShow()
+      showDescriptionModal()
+    };
+
+    const handlemouseout = event => {
+      toogleModalShow()
+    };
+
+    const element = ref.current;
+
+    element?.addEventListener('mouseover', handlemouseover);
+
+    return () => {
+      element?.removeEventListener('mouseout', handlemouseout);
+    };
+  }, [toogleModalShow, showDescriptionModal]);
 
   useEffect(() => {
     dispatch(fetchProfileInfo()); 
@@ -69,7 +109,7 @@ function Personnel() {
     return (
       <div className="personnel-grid-container" data-testid="personnel-grid-container">
         <div className="personnel-grid-photo" data-testid="personnel-grid-photo">
-          <img src={avatar}  alt="avatar" title="avatar" data-testid="avatar-img" style={imageStyles} />
+          <img ref={ref} src={avatar} alt="avatar" title="avatar" data-testid="avatar-img" style={imageStyles} />
         </div> 
         <div className="personnel-grid-subject" data-testid="personnel-grid-subject">
           <div className="personnel-grid-name" data-testid="personnel-grid-name">
@@ -131,9 +171,9 @@ function Personnel() {
     
             <div className="personnel-info-grid-container" data-testid="personnel-info-grid-container">
               <div className="personnel-info-grid-header" data-testid="personnel-info-grid-header">LANGUAGES</div>
-              {LanguagesInfo && LanguagesInfo.map((language) => {
+              {LanguagesInfo && LanguagesInfo.map((language, index) => {
                 return (
-                  <Fragment>
+                  <Fragment key={`lg-${index}`}>
                     <div className="personnel-info-grid-icon" data-testid="personnel-info-grid-icon">
                       <img src={require(`../../assets/images/${language}_flag.svg`)} alt={`${language}_flag`} title={`${language}_flag`} data-testid={`${language}_flag`} style={flagStyles} />
                     </div>
@@ -163,6 +203,9 @@ function Personnel() {
               <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</div>
             </div>
           </div>
+        }
+        {showModal &&
+          showDescriptionModal()
         }
       </div>
     );

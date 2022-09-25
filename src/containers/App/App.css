@@ -4,9 +4,5 @@
   min-height: 100vh;
   overflow: auto;
   background-color: var(--LightPurple);
-  font-family: Source Sans Pro, Helvetica, sans-serif, Arial cursive;
+  font-family: Helvetica, Source Sans Pro, sans-serif, Arial cursive;
 }
- 
-/* .wrapper > * {
-  padding: 20px;
-} */

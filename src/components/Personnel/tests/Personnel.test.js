@@ -1,5 +1,5 @@
 /* eslint-disable import/named */
-import { screen, within, } from '@testing-library/react';
+import { screen, within, fireEvent } from '@testing-library/react';
 import { PersonnelInfo, ContactsInfo, LanguagesInfo } from '../../../assets/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
@@ -113,5 +113,22 @@ describe('components.Personnel tests', () => {
 
     // fireEvent.click(screen.getByTestId('linkedin'));
     // expect(window.location.href).toBe(ContactsInfo.LINKEDIN);
+  });
+
+  it('should render modal description on mouseover profile image', () => {
+    const store = configureTestStore({ ...mockStore });
+    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+
+    expect(screen.getByTestId('avatar-img')).toBeInTheDocument();
+
+    expect(screen.queryByTestId('modal-wrapper')).not.toBeInTheDocument();
+
+    fireEvent.mouseOver(screen.getByTestId('avatar-img'));
+
+    expect(screen.getByTestId('modal-wrapper')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByTestId('close-button'));
+
+    expect(screen.queryByTestId('modal-wrapper')).not.toBeInTheDocument();
   });
 });
