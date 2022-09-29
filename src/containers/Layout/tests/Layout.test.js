@@ -1,9 +1,9 @@
-/* eslint-disable import/named */
+import React from 'react';
 import { screen } from '@testing-library/react';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
 import { ResumeProvider } from '../../../context/ResumeContext';
-import Layout from '../Layout';
+import { Layout } from '../Layout';
 
 describe('containers.Layout tests', () => {
   it('should render layout view contairner', () => {

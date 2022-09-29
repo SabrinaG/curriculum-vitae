@@ -1,11 +1,11 @@
-/* eslint-disable react/prop-types */
+import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import configureMockStore from 'redux-mock-store';
-import { createAsyncThunk } from '@reduxjs/toolkit';
 import { createMemoryHistory } from 'history';
-import withMarkup from './withMarkup';
+
+import { ResumeProvider } from '../../context/ResumeContext';
 
 const middleware = [thunk];
 const createMockStore = configureMockStore(middleware);
@@ -22,27 +22,6 @@ export function filterAction(store) {
   return ({ type }) => store.getActions().find(a => a.type === type);
 }
 
-const asyncNoop = async () => { };
-
-export const mockAsyncThunk = (type, fulfilledImpl = asyncNoop) => {
-  if (!fulfilledImpl || typeof fulfilledImpl !== 'function') {
-    throw new Error('mock implementation must a function');
-  }
-
-  const implMock = jest.fn(fulfilledImpl); // allows us to customize the thunk behaviour
-  const actionCreator = jest.fn(createAsyncThunk(type, implMock)); // allows us to verify that our stub was invoked
-
-  /**
-   * You can customize your mock for specific tests by doing this:
-   *
-   * const myMock = mockAsyncThunk(...)
-   * myMock.$mock.mockImplementationOnce(() => <your custom implementation here>)
-   */
-  actionCreator.$mock = implMock;
-
-  return actionCreator;
-};
-
 /**
  * Create provider wrapper
  */
@@ -58,27 +37,25 @@ export const renderWithProviders = (
   const testingNode = {
     ...renderFn(
       <Provider store={store}>
-        {component}
+        <ResumeProvider>
+          {component}
+        </ResumeProvider>
       </Provider>,
     ),
     store,
   };
 
-  testingNode.rerenderWithProviders = (el, newStore = store) => renderWithProviders(
+  testingNode.rerenderWithProviders = (el, newState) => renderWithProviders(
     el,
     {
-      store: newStore,
+      state: newState,
+      store,
       history,
     },
     testingNode.rerender,
   );
 
-  testingNode.getByTextWithMarkup = withMarkup(testingNode.getByText);
-  testingNode.queryByTextWithMarkup = withMarkup(testingNode.queryByText);
-  testingNode.findByTextWithMarkup = withMarkup(testingNode.findByText);
-
   return testingNode;
 };
 
-export const asyncRenderWithProviders = async (...args) => {
-};
+export const asyncRenderWithProviders = async (...args) => renderWithProviders(...args);

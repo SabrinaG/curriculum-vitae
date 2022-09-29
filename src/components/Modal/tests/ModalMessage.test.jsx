@@ -1,18 +1,18 @@
-/* eslint-disable import/named */
+import React from 'react';
 import { screen, fireEvent } from '@testing-library/react';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
-import DescriptionModal from '../Modal';
+import ModalMessage from '../ModalMessage';
 
-describe('components.DescriptionModal tests', () => {
+describe('components.ModalMessage tests', () => {
   const testModalTitle = 'MODAL TITLE';
   const testModalText = 'MODAL TEXT';
-  
+
   const store = configureTestStore({ });
   const handleCloseSpy = jest.fn();
 
-  it('should render DescriptionModal component', () => {
+  it('should render ModalMessage component', () => {
     renderWithProviders(
-      <DescriptionModal
+      <ModalMessage
         modalTitle={testModalTitle}
         modalText={testModalText}
         handleClose={handleCloseSpy}
@@ -27,7 +27,7 @@ describe('components.DescriptionModal tests', () => {
 
   it('should render string elements correctly', () => {
     renderWithProviders(
-      <DescriptionModal
+      <ModalMessage
         modalTitle={testModalTitle}
         modalText={testModalText}
         handleClose={handleCloseSpy}
@@ -35,15 +35,15 @@ describe('components.DescriptionModal tests', () => {
     );
 
     const modalTitle = screen.getByTestId('h1-title');
-    expect(modalTitle).toHaveTextContent(testModalTitle);
+    expect(modalTitle.textContent).toEqual(testModalTitle);
 
     const modalText = screen.getByTestId('h3-text');
-    expect(modalText).toHaveTextContent(testModalText);
+    expect(modalText.textContent).toEqual(testModalText);
   });
 
   it('should render empty modal', () => {
     renderWithProviders(
-      <DescriptionModal
+      <ModalMessage
         modalTitle={undefined}
         modalText={undefined}
         handleClose={handleCloseSpy}
@@ -60,7 +60,7 @@ describe('components.DescriptionModal tests', () => {
 
   it('should call function to handle close upon click close button', () => {
     renderWithProviders(
-      <DescriptionModal
+      <ModalMessage
         modalTitle={testModalTitle}
         modalText={testModalText}
         handleClose={handleCloseSpy}

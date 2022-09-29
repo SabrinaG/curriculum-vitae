@@ -17,23 +17,41 @@
     overflow-y: auto;
 }
 
-#modal-wrapper .close-button {
+#modal-wrapper .close-button,
+#modal-wrapper .full-screen-button  {
     top: 50px;
-    right: 35px;
     width: 32px;
     height: 32px;
     border: none;
-    position: absolute;
     background: transparent;
+    cursor:pointer;
 }
 
-#modal-wrapper .close-icon {
+#modal-wrapper .close-icon,
+#modal-wrapper .full-screen-icon {
     color: var(--White);
     transform: scale(1.35);
 }
 
 #modal-wrapper .modal-title {
-    display: grid;
+    width: 50%;
+    align-items: center;
+    justify-items: flex-start;
+    color: var(--LightPurple);
+}
+
+#modal-wrapper .modal-button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--LightPurple);
+}
+
+#modal-wrapper .modal-header {
+    display: flex;
+    align-items: right;
+    justify-content: right;
     color: var(--LightPurple);
 }
 

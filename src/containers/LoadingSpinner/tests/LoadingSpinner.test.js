@@ -1,4 +1,4 @@
-/* eslint-disable import/named */
+import React from 'react';
 import { screen } from '@testing-library/react';
 import { renderWithProviders } from '../../../assets/utils/tests.utils';
 import LoadingSpinner from '../LoadingSpinner';

@@ -1,4 +1,6 @@
-import { useState, createContext, useContext } from 'react';
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
+import React, { useState, createContext, useContext } from 'react';
 import PropTypes from 'prop-types';
 import { PersonnelInfo } from '../assets/constants';
 

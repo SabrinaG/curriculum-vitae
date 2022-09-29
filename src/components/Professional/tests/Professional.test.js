@@ -1,8 +1,7 @@
-/* eslint-disable import/named */
-import { screen, fireEvent } from '@testing-library/react';
+import React from 'react';
+import { screen } from '@testing-library/react';
 import { PersonnelInfo, SkillsList } from '../../../assets/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
-import { convertHexToRGBA } from '../../../assets/utils/func.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
 import { ResumeProvider } from '../../../context/ResumeContext';
 import Professional from '../Professional';
@@ -20,13 +19,23 @@ describe('components.Professional tests', () => {
     expect(screen.getAllByTestId('professional-driving-container')).toHaveLength(1);
   });
 
+  it('should call dispach store actions on render Professional component', () => {
+    const store = configureTestStore({ ...mockStore });
+    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+
+    expect(store.dispatch).toHaveBeenCalled();
+    expect(store.dispatch).toHaveBeenCalledTimes(2);
+    // expect(store.dispatch).toHaveBeenCalledWith(fetchExperienceInfo());
+    // expect(store.dispatch).toHaveBeenCalledWith(fetchEducationInfo());
+  });
+
   it('should render spinner, when the store empty', () => {
     const testStore = {
       profile: {
         loading_experience: true,
         loading_education: true,
-      }
-    }
+      },
+    };
 
     const store = configureTestStore({ ...testStore });
     renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
@@ -46,11 +55,11 @@ describe('components.Professional tests', () => {
     expect(screen.getAllByTestId('experience-link')).toHaveLength(4);
 
     const linksList = screen.getAllByTestId('experience-link');
-    linksList.forEach(element => {
+    linksList.forEach((element) => {
       expect(element).toBeTruthy();
       expect(element.href).toBeDefined();
-      expect(element).toHaveAttribute('target', '_blank');
-      expect(element).toHaveAttribute('rel', 'noreferrer');
+      expect(element.getAttribute('target')).toEqual('_blank');
+      expect(element.getAttribute('rel')).toEqual('noreferrer');
     });
 
     expect(screen.getAllByTestId('professional-experience-logo')).toHaveLength(1);
@@ -73,7 +82,7 @@ describe('components.Professional tests', () => {
   //   const linksList = screen.getAllByTestId('experience-link');
 
   //   expect(linksList[0]).toHaveStyle({ color: "#000000" });
-  
+
   //   fireEvent.mouseOver(linksList[0]);
 
   //   expect(linksList[0]).toHaveStyle({ color: "#021040" });
@@ -93,14 +102,15 @@ describe('components.Professional tests', () => {
     expect(screen.getAllByText('SKILLS')).toBeTruthy();
     expect(screen.getAllByTestId('grid-logo')).toBeTruthy();
     expect(screen.getAllByTestId('grid-logo')).toHaveLength(4);
-    
+
+    // eslint-disable-next-line array-callback-return
     Object.keys(SkillsList).map((skill) => {
       const image = screen.getByTestId(skill);
       expect(image).toBeTruthy();
-      expect(image).toHaveAttribute('alt', skill);
+      expect(image.getAttribute('alt')).toEqual(skill);
       expect(image.title).toContain(skill);
       expect(image.src).toBeDefined();
-    })
+    });
   });
 
   it('should render driving licence information, when not in loading status', () => {

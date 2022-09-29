@@ -120,7 +120,7 @@ const api = (state = {}, action = {}) => {
       return nextState;
     }
     default:
-      return null;
+      return {};
   }
 };
 

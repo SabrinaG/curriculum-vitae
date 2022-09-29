@@ -1,0 +1,64 @@
+{
+    "parser": "@babel/eslint-parser",
+    "plugins": [ "react", "jest", "react-hooks" ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "requireConfigFile": false,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "mocha":   true,
+        "jest/globals": true
+    },
+    "globals": {
+        "window": false,
+        "document": false,
+        "navigator" : false,
+        "fetch": false,
+        "Promise": false,
+        "require": false,
+        "__DEV__": false,
+        "__PROD__":false,
+        "__TEST__":false,
+        "process": false,
+        "expect": false,
+        "LOGIN_URL": false,
+        "HOME_URL": false,
+        "USER_EMAIL": false,
+        "USER_PWD": false
+    },
+    "rules": {
+        "max-len": ["error", 170, 2, {
+            "ignoreComments": true
+        }],
+        "arrow-parens": ["error", "as-needed",  { "requireForBlockBody": true }],
+        "class-methods-use-this": "off",
+        "function-paren-newline": ["off"],
+        "implicit-arrow-linebreak": ["off"],
+        "jest/no-export": ["off"],
+        "jsx-a11y/control-has-associated-label": ["off"],
+        "jsx-a11y/label-has-associated-control": ["off"],
+        "jsx-a11y/label-has-for": [ 2, { "allowChildren": true }],
+        "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }],
+        "object-curly-newline": "off",
+        "operator-linebreak": ["off"],
+        "react/destructuring-assignment": ["off"],
+        "react/forbid-prop-types": [2, { "forbid": ["any", "object"] }],
+        "react/jsx-boolean-value": "off",
+        "react/jsx-curly-newline": ["off"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-fragments": ["off"],
+        "react/jsx-one-expression-per-line": ["off"],
+        "react/jsx-props-no-spreading": ["off"],
+        "react/jsx-wrap-multilines": ["off"],
+        "react/no-array-index-key": "off",
+        "react/prop-types": [2],
+        "react/sort-comp": ["off"]
+    },
+    "extends": ["airbnb", "plugin:jest/recommended"]
+}

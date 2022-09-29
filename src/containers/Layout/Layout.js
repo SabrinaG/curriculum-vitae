@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import Professional from '../../components/Professional/Professional';
 import Personnel from '../../components/Personnel/Personnel';
 import './Layout.css';
@@ -18,6 +18,7 @@ import './Layout.css';
 // }
 
 // ===== CLASS COMPONENT SRC CODE =====
+// eslint-disable-next-line react/prefer-stateless-function
 export class Layout extends Component {
   render() {
     return (

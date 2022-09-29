@@ -1,8 +1,5 @@
 import callApi from '../api/services';
-import { PersonnelInfo, backendApi } from '../../assets/constants';
-
-const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_PORT;
-const PROFILE_NAME = PersonnelInfo.NAME.toLowerCase().replace(' ', '-');
+import { API_BASE_URL, PROFILE_NAME, backendApi } from '../../assets/constants';
 
 const postMethod = { basePath: API_BASE_URL, method: 'POST', body: JSON.stringify({ profile: `${PROFILE_NAME}` }) };
 

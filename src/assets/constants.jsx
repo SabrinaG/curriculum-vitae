@@ -49,3 +49,6 @@ export const backendApi = Object.freeze({
   API_ENDPOINT_EXPEIENCE: '/experience',
   API_ENDPOINT_EDUCATION: '/education',
 });
+
+export const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_PORT;
+export const PROFILE_NAME = PersonnelInfo.NAME.toLowerCase().replace(' ', '-');

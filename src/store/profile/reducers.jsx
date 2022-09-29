@@ -1,3 +1,5 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchProfileInfo, fetchExperienceInfo, fetchEducationInfo } from './actions';
@@ -26,7 +28,7 @@ const profileSlice = createSlice({
         phone_number: ContactsInfo.PHONE,
         e_mail: ContactsInfo.EMAIL,
         career_role: PersonnelInfo.ROLE,
-      }
+      };
     },
     [fetchProfileInfo.pending](state) {
       state.loading_profile = true;
@@ -36,23 +38,22 @@ const profileSlice = createSlice({
     },
     [fetchExperienceInfo.fulfilled](state, { payload }) {
       state.loading_experience = false;
-      state.data = payload;
       state.experience = { };
 
-      for (let xp in payload.experience) {
-        const company = payload.experience[xp]["companyName"].split(' ')[0];
-        const startObj = payload.experience[xp]["timePeriod"].startDate;
-        const start = startObj ? `${payload.experience[xp]["timePeriod"].startDate?.month}/${payload.experience[xp]["timePeriod"].startDate?.year}` : '';
-        const stopObj = payload.experience[xp]["timePeriod"].endDate;
-        const stop = stopObj ? `${payload.experience[xp]["timePeriod"].endDate?.month}/${payload.experience[xp]["timePeriod"].endDate?.year}` : 'Present';
-        const description = payload.experience[xp]["description"];
-        const projectObj = {}
+      for (const xp in payload.experience) {
+        const company = payload.experience[xp].companyName.split(' ')[0];
+        const startObj = payload.experience[xp].timePeriod.startDate;
+        const start = startObj ? `${payload.experience[xp].timePeriod.startDate?.month}/${payload.experience[xp].timePeriod.startDate?.year}` : '';
+        const stopObj = payload.experience[xp].timePeriod.endDate;
+        const stop = stopObj ? `${payload.experience[xp].timePeriod.endDate?.month}/${payload.experience[xp].timePeriod.endDate?.year}` : 'Present';
+        const { description } = payload.experience[xp];
+        const projectObj = {};
         const project = description.split(' ')[0];
-        projectObj[project] = {start, stop, description};
+        projectObj[project] = { start, stop, description };
 
         state.experience[company] = {
           ...state.experience[company],
-          ...projectObj
+          ...projectObj,
         };
       }
     },
@@ -64,35 +65,34 @@ const profileSlice = createSlice({
     },
     [fetchEducationInfo.fulfilled](state, { payload }) {
       state.loading_education = false;
-      state.data = payload;
-      state.education = { }
-      state.internship = { }
+      state.education = { };
+      state.internship = { };
 
-      for (let ed in payload.education) {
-        const university = payload.education[ed]["schoolName"];
-        const grade = payload.education[ed]["grade"];
-        const degree = payload.education[ed]["degreeName"];
-        const studyField = payload.education[ed]["fieldOfStudy"];
+      for (const ed in payload.education) {
+        const university = payload.education[ed].schoolName;
+        const { grade } = payload.education[ed];
+        const degree = payload.education[ed].degreeName;
+        const studyField = payload.education[ed].fieldOfStudy;
 
-        const startObj = payload.education[ed]["timePeriod"].startDate;
-        const start = startObj ? `${payload.education[ed]["timePeriod"].startDate?.month}/${payload.education[ed]["timePeriod"].startDate?.year}` : '';
-        const stopObj = payload.education[ed]["timePeriod"].endDate;
-        const stop = stopObj ? `${payload.education[ed]["timePeriod"].endDate?.month}/${payload.education[ed]["timePeriod"].endDate?.year}` : 'Present';
+        const startObj = payload.education[ed].timePeriod.startDate;
+        const start = startObj ? `${payload.education[ed].timePeriod.startDate?.month}/${payload.education[ed].timePeriod.startDate?.year}` : '';
+        const stopObj = payload.education[ed].timePeriod.endDate;
+        const stop = stopObj ? `${payload.education[ed].timePeriod.endDate?.month}/${payload.education[ed].timePeriod.endDate?.year}` : 'Present';
 
         const studyObj = {};
-        studyObj[degree ? degree : grade ] = {start, stop, studyField};
+        studyObj[degree || grade] = { start, stop, studyField };
 
-        if(grade && !degree) {
+        if (grade && !degree) {
           state.internship[university] = {
             ...state.internship[university],
             ...studyObj,
           };
         }
 
-        if(degree) {
+        if (degree) {
           state.education[university] = {
             ...state.education[university],
-            ...studyObj
+            ...studyObj,
           };
         }
       }
