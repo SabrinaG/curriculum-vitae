@@ -131,8 +131,6 @@ describe('api.selectors tests', () => {
     expect(selectLoadingObjectsError(state, 'test')).toBeNull();
   });
 
-  // -- isCreatingObject
-
   it('isCreatingObject - Should select default creating state for unexisting object', () => {
     expect(isCreatingObject(state, 'test')).toEqual(false);
   });
@@ -140,8 +138,6 @@ describe('api.selectors tests', () => {
   it('isCreatingObject - Should select creating state for object', () => {
     expect(isCreatingObject(state, 'profile')).toEqual(true);
   });
-
-  // -- selectCreatingObjectError
 
   it('selectCreatingObjectError - Should select default creating error for unexisting object', () => {
     expect(selectCreatingObjectError(state, 'profile')).toBeNull();
@@ -158,8 +154,6 @@ describe('api.selectors tests', () => {
     expect(selectCreatingObjectError(state, 'profile')).toEqual(error);
   });
 
-  // -- isDeletingObject
-
   it('isDeletingObject - Should select default deleting state for unexisting object', () => {
     expect(isDeletingObject(state, 'profile', 10)).toEqual(false);
   });
@@ -167,8 +161,6 @@ describe('api.selectors tests', () => {
   it('isDeletingObject - Should select deleting state for object', () => {
     expect(isDeletingObject(state, 'profile', 1)).toEqual(true);
   });
-
-  // -- selectDeletingObjectError
 
   it('selectDeletingObjectError - Should select default deleting error for unexisting object', () => {
     expect(selectDeletingObjectError(state, 'profile', 1)).toBeNull();
@@ -185,8 +177,6 @@ describe('api.selectors tests', () => {
     expect(selectDeletingObjectError(state, 'profile', 1)).toEqual(error);
   });
 
-  // -- isUpdatingObject
-
   it('isUpdatingObject - Should select default updating state for unexisting object', () => {
     expect(isUpdatingObject(state, 'profile', 10)).toEqual(false);
   });
@@ -194,8 +184,6 @@ describe('api.selectors tests', () => {
   it('isUpdatingObject - Should select updating state for object', () => {
     expect(isUpdatingObject(state, 'profile', 1)).toEqual(true);
   });
-
-  // -- selectUpdateObjectError
 
   it('selectUpdateObjectError - Should select default updating error for unexisting object', () => {
     expect(selectUpdateObjectError(state, 'profile', 10)).toBeNull();
@@ -212,8 +200,6 @@ describe('api.selectors tests', () => {
     expect(selectUpdateObjectError(state, 'profile', 1)).toEqual(error);
   });
 
-  // -- isCallingActionObject
-
   it('isCallingActionObject - Should select default calling action for unexisting object', () => {
     expect(isCallingActionObject(state, 'profile', 10, 'action')).toEqual(false);
   });
@@ -221,8 +207,6 @@ describe('api.selectors tests', () => {
   it('isCallingActionObject - Should select calling action for object', () => {
     expect(isCallingActionObject(state, 'profile', 1, 'action')).toEqual(true);
   });
-
-  // -- selectCallingActionError
 
   it('selectCallingActionError - Should select default calling action error for unexisting object', () => {
     expect(selectCallingActionError(state, 'profile', 10)).toBeNull();
