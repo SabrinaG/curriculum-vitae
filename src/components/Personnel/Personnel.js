@@ -60,7 +60,7 @@ function Personnel() {
     <ErrorBoundary component="message modal">
       <ModalMessage
         modalTitle="Motivation"
-        modalText={profileData?.summary}
+        modalText={profileData?.summary || 'Sorry! The profile summary is currently not available.'}
         handleClose={toogleShowModalMessage}
       />
     </ErrorBoundary>
@@ -83,6 +83,12 @@ function Personnel() {
     };
 
     const elementMessage = refMessage?.current;
+
+    document.addEventListener('click', (event) => {
+      if (event.target.matches('.close-button') || !event.target.closest('.modal-wrapper')) {
+        toogleShowModalMessage();
+      }
+    });
 
     elementMessage?.addEventListener('mouseover', handlemouseover);
 

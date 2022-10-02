@@ -25,7 +25,9 @@ v16.11.1
 $ yarn --version
 1.13.0
 ```
-This app is interacting with this [Python API](https://github.com/NickVrgr/LinkedinAPI) and both are running on the same [nginx server](https://www.nginx.com/). 
+This app is interacting with this [Python API](https://github.com/NickVrgr/LinkedinAPI).
+Both are running on the same [nginx server](https://www.nginx.com/). 
+The deployment of the app can be accessed at [sabrinaguia.pt](https://sabrinaguia.pt/). 
 
 In the project directory, you can run:
 
@@ -67,5 +69,6 @@ Builds the app for production to the `build` folder.
 |`server mocking with nock`          |                                    |
 |`routing`                           |                                    | 
 |`suspender`                         |                                    | 
+|`CORS policy`                       |                                    | 
 
 Got any tip to share or comment to improve? Please do so, it will be much appreciated!
