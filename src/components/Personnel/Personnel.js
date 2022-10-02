@@ -143,7 +143,7 @@ function Personnel() {
           </div>
         </Link>
       </div>
-      {loadingState && loadingState ? showPersonnelLoader() :
+      {(loadingState || !profileData) ? showPersonnelLoader() :
       <div className="personnel-grid-detail" data-testid="personnel-grid-detail">
         <div className="personnel-info-grid-container" data-testid="personnel-info-grid-container">
           <div className="personnel-info-grid-header" data-testid="personnel-info-grid-header">CONTACT</div>
@@ -232,13 +232,13 @@ function Personnel() {
           {/* <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</div> */}
         </div>
       </div>
-        }
+      }
       {showModalMessage &&
-          renderModalMessage()
-        }
+        renderModalMessage()
+      }
       {showModalFrame &&
-          renderModalFrame()
-        }
+        renderModalFrame()
+      }
     </div>
   );
 
@@ -248,7 +248,7 @@ function Personnel() {
     </ErrorBoundary>
   );
 
-  const renderPersonnelData = () => (errorState ? showPersonnelError() : profileData && showPersonnelData());
+  const renderPersonnelData = () => (errorState ? showPersonnelError() : showPersonnelData());
 
   return renderPersonnelData();
 }

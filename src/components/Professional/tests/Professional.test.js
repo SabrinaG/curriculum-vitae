@@ -3,13 +3,12 @@ import { screen } from '@testing-library/react';
 import { PersonnelInfo, SkillsList } from '../../../assets/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
-import { ResumeProvider } from '../../../context/ResumeContext';
 import Professional from '../Professional';
 
 describe('components.Professional tests', () => {
   it('should render Professional component', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(screen.getAllByTestId('professional-grid-container')).toHaveLength(1);
     expect(screen.getAllByTestId('professional-experience-container')).toHaveLength(1);
@@ -21,7 +20,7 @@ describe('components.Professional tests', () => {
 
   it('should call dispach store actions on render Professional component', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(store.dispatch).toHaveBeenCalled();
     expect(store.dispatch).toHaveBeenCalledTimes(2);
@@ -38,14 +37,14 @@ describe('components.Professional tests', () => {
     };
 
     const store = configureTestStore({ ...testStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(screen.getByTestId('professional-load-spinner')).toBeTruthy();
   });
 
   it('should render experience information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(screen.getAllByText('EXPERIENCE')).toBeTruthy();
     expect(screen.getAllByTestId('professional-info-grid-date')).toBeTruthy();
@@ -74,7 +73,7 @@ describe('components.Professional tests', () => {
 
   // it('should link style on mouseover projects', () => {
   //   const store = configureTestStore({ ...mockStore });
-  //   renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+  //   renderWithProviders(<Professional />, { store });
 
   //   expect(screen.getAllByText('EXPERIENCE')).toBeTruthy();
   //   expect(screen.getAllByTestId('experience-link')).toHaveLength(4);
@@ -90,14 +89,14 @@ describe('components.Professional tests', () => {
 
   it('should render intership information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(screen.getAllByText('INTERNSHIP')).toBeTruthy();
   });
 
   it('should render skils information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(screen.getAllByText('SKILLS')).toBeTruthy();
     expect(screen.getAllByTestId('grid-logo')).toBeTruthy();
@@ -115,7 +114,7 @@ describe('components.Professional tests', () => {
 
   it('should render driving licence information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Professional /></ResumeProvider>, { store });
+    renderWithProviders(<Professional />, { store });
 
     expect(screen.getAllByText('DRIVING LICENCE')).toBeTruthy();
     expect(screen.getAllByText(PersonnelInfo.LICENCE)).toBeTruthy();

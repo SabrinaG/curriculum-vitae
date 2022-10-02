@@ -3,14 +3,12 @@ import { screen, within, fireEvent } from '@testing-library/react';
 import { PersonnelInfo, ContactsInfo, LanguagesInfo } from '../../../assets/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
-import resumeContextData from '../../../assets/mocks/resumeContextData';
-import { ResumeProvider } from '../../../context/ResumeContext';
 import Personnel from '../Personnel';
 
 describe('components.Personnel tests', () => {
   it('should render Personnel component', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('personnel-grid-container')).toBeTruthy();
     expect(screen.getByTestId('personnel-grid-photo')).toBeTruthy();
@@ -28,7 +26,7 @@ describe('components.Personnel tests', () => {
 
   it('should dispach store actions on render Personnel component', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(store.dispatch).toHaveBeenCalled();
     expect(store.dispatch).toHaveBeenCalledTimes(1);
@@ -42,7 +40,7 @@ describe('components.Personnel tests', () => {
       },
     };
     const store = configureTestStore({ ...testStore });
-    renderWithProviders(<ResumeProvider value={resumeContextData}><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('avatar-img')).toBeTruthy();
     expect(screen.getAllByText(PersonnelInfo.NAME)).toBeTruthy();
@@ -51,7 +49,7 @@ describe('components.Personnel tests', () => {
 
   it('should render owner information, with store fulfilled', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('avatar-img')).toBeTruthy();
     expect(screen.getAllByText(PersonnelInfo.NAME)).toBeTruthy();
@@ -66,7 +64,7 @@ describe('components.Personnel tests', () => {
     };
 
     const store = configureTestStore({ ...testStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('personnel-load-spinner')).toBeTruthy();
     const personnelDetail = screen.getByTestId('personnel-grid-container');
@@ -76,7 +74,7 @@ describe('components.Personnel tests', () => {
 
   it('should render contact information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getAllByText('CONTACT')).toBeTruthy();
     expect(screen.getAllByText(ContactsInfo.LOCATION)).toBeTruthy();
@@ -88,7 +86,7 @@ describe('components.Personnel tests', () => {
 
   it('should render links information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getAllByText('LINKS')).toBeTruthy();
     expect(screen.getByTestId('github').getAttribute('href')).toEqual(ContactsInfo.GITHUB);
@@ -101,7 +99,7 @@ describe('components.Personnel tests', () => {
 
   it('should render languages information, when not in loading status', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getAllByText('LANGUAGES')).toBeTruthy();
     // eslint-disable-next-line array-callback-return
@@ -113,7 +111,7 @@ describe('components.Personnel tests', () => {
 
   it('should open url in a new tab when clicking on a element with href', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('linkedin').getAttribute('href')).toEqual(ContactsInfo.LINKEDIN);
     expect(screen.getByTestId('linkedin').getAttribute('target')).toEqual('_blank');
@@ -127,7 +125,7 @@ describe('components.Personnel tests', () => {
 
   it('should render modal message on mouseover profile image', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('avatar-img')).toBeTruthy();
 
@@ -144,7 +142,7 @@ describe('components.Personnel tests', () => {
 
   it('should render modal frame on mouseover curricuulum vitae link', () => {
     const store = configureTestStore({ ...mockStore });
-    renderWithProviders(<ResumeProvider><Personnel /></ResumeProvider>, { store });
+    renderWithProviders(<Personnel />, { store });
 
     expect(screen.getByTestId('cv')).toBeTruthy();
 
