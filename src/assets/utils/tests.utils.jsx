@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Router } from 'react-router-dom';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
@@ -38,7 +39,11 @@ export const renderWithProviders = (
     ...renderFn(
       <Provider store={store}>
         <ResumeProvider>
-          {component}
+          <Suspense fallback={<p>Loading...</p>}>
+            <Router location={history.location} navigator={history}>
+              {component}
+            </Router>
+          </Suspense>
         </ResumeProvider>
       </Provider>,
     ),

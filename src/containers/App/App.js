@@ -1,13 +1,23 @@
-import React from 'react';
-import { Layout } from '../Layout/Layout';
-import './App.css';
+import React, { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Loader from '../LoadingSpinner/LoadingSpinner';
+import createStore from '../../store';
 
-function App() {
+const InfoLayout = lazy(() => import('../Layout/InfoLayout'));
+const DisplayLayout = lazy(() => import('../Layout/DisplayLayout'));
+
+const store = createStore();
+
+export default function App() {
   return (
-    <div className="wrapper">
-      <Layout />
-    </div>
+    <Provider store={store}>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<InfoLayout />} />
+          <Route path="/gallery" element={<DisplayLayout />} />
+        </Routes>
+      </Suspense>
+    </Provider>
   );
 }
-
-export default App;

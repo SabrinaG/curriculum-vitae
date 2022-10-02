@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Professional from '../../components/Professional/Professional';
 import Personnel from '../../components/Personnel/Personnel';
+import Gallery from '../../components/Gallery/Gallery';
 import './Layout.css';
 
 // ===== FUNCTIONAL COMPONENT SRC CODE =====
-// function Layout() {
+// function Gallery() {
 //   return (
 //     <div className="layout" data-testid="layout">
 //       <div className="personnel" data-testid="personnel">
 //         <Personnel />
 //       </div>
-//       <div className="professional" data-testid="professional">
-//         <Professional />
+//       <div className="gallery" data-testid="gallery">
+//         <Gallery />
 //       </div>
 //     </div>
 //   );
@@ -19,19 +19,19 @@ import './Layout.css';
 
 // ===== CLASS COMPONENT SRC CODE =====
 // eslint-disable-next-line react/prefer-stateless-function
-export class Layout extends Component {
+export class DisplayLayout extends Component {
   render() {
     return (
       <div className="layout" data-testid="layout">
         <div className="personnel" data-testid="personnel">
           <Personnel />
         </div>
-        <div className="professional" data-testid="professional">
-          <Professional />
+        <div className="gallery" data-testid="gallery">
+          <Gallery />
         </div>
       </div>
     );
   }
 }
 
-export default Layout;
+export default DisplayLayout;

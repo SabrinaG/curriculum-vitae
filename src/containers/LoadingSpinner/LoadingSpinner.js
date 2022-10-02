@@ -26,7 +26,11 @@ class LoadingSpinner extends React.Component {
 }
 
 LoadingSpinner.propTypes = {
-  labelColor: PropTypes.string.isRequired,
+  labelColor: PropTypes.string,
+};
+
+LoadingSpinner.defaultProps = {
+  labelColor: '#022a49',
 };
 
 export default LoadingSpinner;

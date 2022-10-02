@@ -11,6 +11,7 @@ import {
   PhotoCamera,
 } from '@material-ui/icons';
 import React, { Fragment, useState, useEffect, useRef, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import avatar from '../../assets/images/avatar.svg';
 import { ContactsInfo, LanguagesInfo, HobbiesInfo } from '../../assets/constants';
@@ -133,12 +134,14 @@ function Personnel() {
         <img ref={refMessage} src={avatar} alt="avatar" title="avatar" data-testid="avatar-img" style={imageStyles} />
       </div>
       <div className="personnel-grid-subject" data-testid="personnel-grid-subject">
-        <div className="personnel-grid-name" data-testid="personnel-grid-name">
-          {(profileInfo && profileInfo?.name) || resumeContext.name}
-        </div>
-        <div className="personnel-grid-role" data-testid="personnel-grid-role">
-          {(profileInfo && profileInfo?.career_role) || resumeContext.role}
-        </div>
+        <Link to="/">
+          <div className="personnel-grid-name" data-testid="personnel-grid-name">
+            {(profileInfo && profileInfo?.name) || resumeContext.name}
+          </div>
+          <div className="personnel-grid-role" data-testid="personnel-grid-role">
+            {(profileInfo && profileInfo?.career_role) || resumeContext.role}
+          </div>
+        </Link>
       </div>
       {loadingState && loadingState ? showPersonnelLoader() :
       <div className="personnel-grid-detail" data-testid="personnel-grid-detail">
@@ -225,7 +228,8 @@ function Personnel() {
           <div className="personnel-info-grid-icon" data-testid="personnel-info-grid-icon">
             <PhotoCamera style={iconStyles} />
           </div>
-          <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</div>
+          <Link to="/gallery" className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</Link>
+          {/* <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</div> */}
         </div>
       </div>
         }
@@ -244,7 +248,7 @@ function Personnel() {
     </ErrorBoundary>
   );
 
-  const renderPersonnelData = () => (errorState ? showPersonnelError() : showPersonnelData());
+  const renderPersonnelData = () => (errorState ? showPersonnelError() : profileData && showPersonnelData());
 
   return renderPersonnelData();
 }

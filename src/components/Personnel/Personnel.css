@@ -85,10 +85,13 @@
 }
 
 a.link,
-a.link:visited {
+a.link:visited,
+a:-webkit-any-link {
     color: var(--White);
+    text-decoration: none;
 }
 
-a.link:hover {
+a.link:hover,
+a:-webkit-any-link:hover {
     color: var(--LightPurple);
 }
