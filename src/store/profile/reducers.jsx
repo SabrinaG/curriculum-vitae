@@ -17,6 +17,9 @@ const profileSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: {
+    [fetchProfileInfo.pending](state) {
+      state.loading_profile = true;
+    },
     [fetchProfileInfo.fulfilled](state, { payload }) {
       state.loading_profile = false;
       state.data = payload;
@@ -30,11 +33,11 @@ const profileSlice = createSlice({
         career_role: PersonnelInfo.ROLE,
       };
     },
-    [fetchProfileInfo.pending](state) {
-      state.loading_profile = true;
-    },
     [fetchProfileInfo.rejected](state, { payload }) {
       state.error = payload;
+    },
+    [fetchExperienceInfo.pending](state) {
+      state.loading_experience = true;
     },
     [fetchExperienceInfo.fulfilled](state, { payload }) {
       state.loading_experience = false;
@@ -57,11 +60,11 @@ const profileSlice = createSlice({
         };
       }
     },
-    [fetchExperienceInfo.pending](state) {
-      state.loading_experience = true;
-    },
     [fetchExperienceInfo.rejected](state, { payload }) {
       state.error = payload;
+    },
+    [fetchEducationInfo.pending](state) {
+      state.loading_education = true;
     },
     [fetchEducationInfo.fulfilled](state, { payload }) {
       state.loading_education = false;
@@ -96,9 +99,6 @@ const profileSlice = createSlice({
           };
         }
       }
-    },
-    [fetchEducationInfo.pending](state) {
-      state.loading_education = true;
     },
     [fetchEducationInfo.rejected](state, { payload }) {
       state.error = payload;

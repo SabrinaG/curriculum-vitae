@@ -1,14 +1,10 @@
-export const interceptors = {
-  headers: [],
-};
+import { ErrorHandler } from '../../assets/utils/ErrorHandler';
+
+export const interceptors = { headers: [] };
 
 const basePath = options => (options.basePath ? options.basePath : 'http://localhost:3000/');
 
-const getApiPath = (path, options) => {
-  const resultPath = basePath(options) + path;
-
-  return resultPath;
-};
+const getApiPath = (path, options) => basePath(options) + path;
 
 const buildHeaders = (initialHeaders = {}) => interceptors.headers.reduce(
   async (previous, interceptor) => {
@@ -46,8 +42,7 @@ const callApi = async (path, options = {}) => {
       return response;
     })
     .catch((err) => {
-      // eslint-disable-next-line no-console
-      console.log('Failed to fetch profile info with message log: ', err);
+      ErrorHandler.logError(err);
       throw err;
     });
 };

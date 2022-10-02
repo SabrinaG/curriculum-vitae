@@ -44,7 +44,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test --env=jsdom -- --config jest.config.js",
+    "test": "react-scripts test -- --config=jest.config.js",
     "test:coverage": "react-scripts test --coverage --whatchAll=true",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
   },

@@ -9,7 +9,7 @@ module.exports = {
   ...baseConfig,
   setupFilesAfterEnv: [
     ...baseConfig.setupFiles,
-    './src/assets/setups/setupApi.js',
+    './src/assets/setups/setupJest.js',
   ],
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
