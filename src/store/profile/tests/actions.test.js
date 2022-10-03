@@ -1,13 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import nock from 'nock';
 import { fetchProfileInfo, fetchExperienceInfo, fetchEducationInfo } from '../actions';
-import { PersonnelInfo, backendApi } from '../../../assets/constants';
+import { API_BASE_URL, PersonnelInfo, backendApi } from '../../../assets/constants';
 import { configureTestStore, filterAction } from '../../../assets/utils/tests.utils';
 import mockFullProfile from '../../../assets/mocks/mockFullProfile.json';
 import mockExperience from '../../../assets/mocks/mockExperience.json';
 import mockEducation from '../../../assets/mocks/mockEducation.json';
 
-const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_PORT;
 const PROFILE_NAME = PersonnelInfo.NAME.toLowerCase().replace(' ', '-');
 
 describe('profile.actions tests', () => {

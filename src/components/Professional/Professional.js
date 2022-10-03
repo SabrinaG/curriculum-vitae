@@ -14,7 +14,7 @@ import {
   selectInternshipData,
   selectEducationData,
 } from '../../store/profile/selectors';
-import { SkillsList, EntetiesLinks, ProjectsLinks, PersonnelInfo } from '../../assets/constants';
+import { SkillsList, EntetiesLinks, ProjectsLinks, PersonnelInfo, SET_TIMER } from '../../assets/constants';
 import './Professional.css';
 
 const logoStyles = { width: '5em', height: '5em' };
@@ -37,11 +37,11 @@ function Professional() {
 
     const intervalExperience = setInterval(() => {
       dispatch(fetchExperienceInfo());
-    }, 60000);
+    }, SET_TIMER);
 
     const intervalEducation = setInterval(() => {
       dispatch(fetchEducationInfo());
-    }, 60000);
+    }, SET_TIMER);
 
     return () => {
       clearInterval(intervalExperience);

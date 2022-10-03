@@ -11,10 +11,9 @@ import {
   PhotoCamera,
 } from '@material-ui/icons';
 import React, { Fragment, useState, useEffect, useRef, useCallback } from 'react';
-import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import avatar from '../../assets/images/avatar.svg';
-import { ContactsInfo, LanguagesInfo, HobbiesInfo } from '../../assets/constants';
 import PortugueseFlag from '../../assets/images/Portuguese_flag.svg';
 import EnglishFlag from '../../assets/images/English_flag.svg';
 import { useResumeContext } from '../../context/ResumeContext';
@@ -24,6 +23,7 @@ import ErrorBoundary from '../../containers/ErrorBoundary/ErrorBoundary';
 import LoadingSpinner from '../../containers/LoadingSpinner/LoadingSpinner';
 import { fetchProfileInfo } from '../../store/profile/actions';
 import { selectLoadingProfileInfo, selectProfileInfo, selectProfileData } from '../../store/profile/selectors';
+import { ContactsInfo, LanguagesInfo, HobbiesInfo, SET_TIMER } from '../../assets/constants';
 import './Personnel.css';
 
 const imageStyles = { width: '250px', height: '250px', borderRadius: '50%' };
@@ -128,7 +128,7 @@ function Personnel() {
 
     const intervalProfile = setInterval(() => {
       dispatch(fetchProfileInfo());
-    }, 60000);
+    }, SET_TIMER);
 
     return () => {
       clearInterval(intervalProfile);

@@ -63,10 +63,10 @@ Builds the app for production to the `build` folder.
   
 |DONE                                |TO BE DONE                          |
 |------------------------------------|------------------------------------|
-|`flex`                              |`CI/CD`                             |
-|`grid`                              |                                    |
-|`event handling`                    |                                    | 
-|`fireEvent` and `userEvent`         |                                    |
+|`flex`                              |`lint`                              |
+|`grid`                              |`audit`                             |
+|`event handling`                    |`CI/CD`                             | 
+|`fireEvent` and `userEvent`         |`webpack`                           |
 |`server mocking with nock`          |                                    |
 |`routing`                           |                                    | 
 |`suspender`                         |                                    | 
