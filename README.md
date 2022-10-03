@@ -66,6 +66,7 @@ Builds the app for production to the `build` folder.
 |`flex`                              |`CI/CD`                             |
 |`grid`                              |                                    |
 |`event handling`                    |                                    | 
+|`fireEvent` and `userEvent`         |                                    |
 |`server mocking with nock`          |                                    |
 |`routing`                           |                                    | 
 |`suspender`                         |                                    | 

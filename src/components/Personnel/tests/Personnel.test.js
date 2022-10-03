@@ -140,7 +140,7 @@ describe('components.Personnel tests', () => {
     expect(screen.queryByTestId('modal-wrapper')).toBeFalsy();
   });
 
-  it('should render modal frame on mouseover curricuulum vitae link', () => {
+  it('should render modal frame on mouseover curriculum vitae link', () => {
     const store = configureTestStore({ ...mockStore });
     renderWithProviders(<Personnel />, { store });
 

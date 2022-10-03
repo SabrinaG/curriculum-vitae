@@ -48,18 +48,18 @@ function Personnel() {
   const profileInfo = useSelector(selectProfileInfo);
   const profileData = useSelector(selectProfileData);
 
-  const toogleShowModalMessage = useCallback(() => {
-    setShowModalMessage(!showModalMessage);
-  }, [showModalMessage]);
+  const toogleShowModalMessage = useCallback(flag =>
+    (flag ? setShowModalMessage(flag) : setShowModalMessage(!showModalMessage)), [showModalMessage],
+  );
 
-  const toogleShowModalFrame = useCallback(() => {
-    setShowModalFrame(!showModalFrame);
-  }, [showModalFrame]);
+  const toogleShowModalFrame = useCallback(flag =>
+    (flag ? setShowModalFrame(flag) : setShowModalFrame(!showModalFrame)), [showModalFrame],
+  );
 
   const renderModalMessage = useCallback(() => (
     <ErrorBoundary component="message modal">
       <ModalMessage
-        modalTitle="Motivation"
+        modalTitle="About me"
         modalText={profileData?.summary || 'Sorry! The profile summary is currently not available.'}
         handleClose={toogleShowModalMessage}
       />
@@ -73,22 +73,29 @@ function Personnel() {
   ), [toogleShowModalFrame]);
 
   useEffect(() => {
+    document.addEventListener('click', (event) => {
+      if (event.target.matches('.material-icons.close-icon') || !event.target.closest('.modal-text')) {
+        if (showModalMessage) {
+          toogleShowModalMessage(false);
+        }
+        if (showModalFrame) {
+          toogleShowModalFrame(false);
+        }
+      }
+    });
+  }, [toogleShowModalMessage, toogleShowModalFrame]);
+
+  useEffect(() => {
     const handlemouseover = () => {
-      toogleShowModalMessage();
+      toogleShowModalMessage(true);
       renderModalMessage();
     };
 
     const handlemouseout = () => {
-      toogleShowModalMessage();
+      toogleShowModalMessage(false);
     };
 
     const elementMessage = refMessage?.current;
-
-    document.addEventListener('click', (event) => {
-      if (event.target.matches('.close-button') || !event.target.closest('.modal-wrapper')) {
-        toogleShowModalMessage();
-      }
-    });
 
     elementMessage?.addEventListener('mouseover', handlemouseover);
 
@@ -99,12 +106,12 @@ function Personnel() {
 
   useEffect(() => {
     const handlemouseover = () => {
-      toogleShowModalFrame();
+      toogleShowModalFrame(true);
       renderModalFrame();
     };
 
     const handlemouseout = () => {
-      toogleShowModalFrame();
+      toogleShowModalFrame(false);
     };
 
     const elementFrame = refFrame?.current;
