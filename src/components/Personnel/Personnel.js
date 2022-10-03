@@ -125,7 +125,15 @@ function Personnel() {
 
   useEffect(() => {
     dispatch(fetchProfileInfo());
-  }, [dispatch]);
+
+    const intervalProfile = setInterval(() => {
+      dispatch(fetchProfileInfo());
+    }, 60000);
+
+    return () => {
+      clearInterval(intervalProfile);
+    };
+  }, [fetchProfileInfo]);
 
   useEffect(() => {
     setLoadingState(loadingProfileInfo);

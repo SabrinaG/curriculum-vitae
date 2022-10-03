@@ -42,13 +42,13 @@ export const ProjectsLinks = Object.freeze({
 });
 
 export const backendApi = Object.freeze({
-  API_HEADER: 'http://',
-  API_IP: '51.178.83.45',
-  API_PORT: ':5000',
+  API_HEADER: 'https://',
+  API_IP: 'sabrinaguia.pt',
+  API_ENDPOINT: '/api',
   API_ENDPOINT_PROFILE: '/full_profile',
   API_ENDPOINT_EXPEIENCE: '/experience',
   API_ENDPOINT_EDUCATION: '/education',
 });
 
-export const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_PORT;
+export const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_ENDPOINT;
 export const PROFILE_NAME = PersonnelInfo.NAME.toLowerCase().replace(' ', '-');

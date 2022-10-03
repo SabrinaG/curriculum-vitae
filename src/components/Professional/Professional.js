@@ -34,7 +34,20 @@ function Professional() {
   useEffect(() => {
     dispatch(fetchExperienceInfo());
     dispatch(fetchEducationInfo());
-  }, [dispatch]);
+
+    const intervalExperience = setInterval(() => {
+      dispatch(fetchExperienceInfo());
+    }, 60000);
+
+    const intervalEducation = setInterval(() => {
+      dispatch(fetchEducationInfo());
+    }, 60000);
+
+    return () => {
+      clearInterval(intervalExperience);
+      clearInterval(intervalEducation);
+    };
+  }, [fetchExperienceInfo, fetchEducationInfo]);
 
   useEffect(() => {
     setLoadingState(loadingExperienceData || loadingEducationData);
