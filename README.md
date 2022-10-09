@@ -67,9 +67,15 @@ Builds the app for production to the `build` folder.
 |`grid`                              |`audit`                             |
 |`event handling`                    |`CI/CD`                             | 
 |`fireEvent` and `userEvent`         |`webpack`                           |
-|`server mocking with nock`          |                                    |
+|`server mocking with nock`          |`light/dak theme`                   |
 |`routing`                           |                                    | 
 |`suspender`                         |                                    | 
+|`material-ui`                       |                                    | 
+|`material-icons`                    |                                    | 
+|`suspender`                         |                                    | 
+|`error boudary`                     |                                    | 
 |`CORS policy`                       |                                    | 
+|`mixpanel`                          |                                    | 
+|------------------------------------|------------------------------------|
 
 Got any tip to share or comment to improve? Please do so, it will be much appreciated!
