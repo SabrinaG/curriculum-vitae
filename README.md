@@ -76,6 +76,7 @@ Builds the app for production to the `build` folder.
 |`error boudary`                     |                                    | 
 |`CORS policy`                       |                                    | 
 |`mixpanel`                          |                                    | 
+|`google analytics`                  |                                    | 
 |------------------------------------|------------------------------------|
 
 Got any tip to share or comment to improve? Please do so, it will be much appreciated!

@@ -53,4 +53,3 @@ export const backendApi = Object.freeze({
 export const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_ENDPOINT;
 export const PROFILE_NAME = PersonnelInfo.NAME.toLowerCase().replace(' ', '-');
 export const SET_TIMER = 900000; //15min
-export const MIXPANEL_PROJECT_TOKEN = '50b6881abc352a81fdfa72a13bcc6681';
