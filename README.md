@@ -77,6 +77,7 @@ Builds the app for production to the `build` folder.
 |`CORS policy`                       |                                    | 
 |`mixpanel`                          |                                    | 
 |`google analytics`                  |                                    | 
+|`node.js and github webhooks`       |                                    | 
 |------------------------------------|------------------------------------|
 
 Got any tip to share or comment to improve? Please do so, it will be much appreciated!
