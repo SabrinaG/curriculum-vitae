@@ -61,6 +61,7 @@ Builds the app for production to the `build` folder.
 ## 
 ### What was explored and what is to come?
   
+|------------------------------------|------------------------------------|
 |DONE                                |TO BE DONE                          |
 |------------------------------------|------------------------------------|
 |`flex`                              |`lint`                              |
