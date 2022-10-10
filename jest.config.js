@@ -1,7 +1,8 @@
+//eslint-disable-next-line no-undef
 module.exports = {
     roots: ["src"],
     verbose: true,
-    testURL: "http://localhost:8080/",
+    testURL: "http://localhost:3000/",
     testEnvironment: 'jsdom',
     setupFilesAfterEnv: [
         "<rootDir>/src/assets/setups/setupJest.js",
