@@ -14,7 +14,7 @@ const history = createBrowserHistory();
 
 export default function App() {
   return (
-    <Provider store={store} history={history}>
+    <Provider store={store}>
       <Suspense fallback={<Loader />}>
         <ResumeProvider>
           <Routes history={history}>
