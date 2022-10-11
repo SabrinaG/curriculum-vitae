@@ -1,5 +1,5 @@
 
-# Welcome to my curriculum vitae!
+# Welcome to my curriculum vitae webpage!
 
 Hi! I'm Sabrina Guia. I've been working as a front-end developer for the past 3 years.
 **Disclaimer**: this is a small project only to explore concepts under the scope of:
