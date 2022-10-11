@@ -32,13 +32,13 @@ function Gallery() {
   return (
     <div className="gallery-container" data-testid="gallery-container">
       <Imgix
-        key="srcImg"
+        key="ImgixImg"
         src="https://i.pinimg.com/originals/ba/ac/55/baac557ee6f59ad451a1ac0b9f300afd.jpg"
         imgixParams={{ fit: 'crop', ar: '1:1' }}
       />
-      {photoList.map(photo => (
+      {photoList.map((photo, index) => (
         <img
-          key={photo}
+          key={index}
           src={photo}
           alt={photo}
         />

@@ -152,7 +152,7 @@ function Personnel() {
   const showPersonnelData = () => (
     <div className="personnel-grid-container" data-testid="personnel-grid-container">
       <div className="personnel-grid-photo" data-testid="personnel-grid-photo">
-        <img ref={refMessage} src={avatar} alt="avatar" title="avatar" data-testid="avatar-img" style={imageStyles} />
+        <img ref={refMessage} src={avatar} key="avatar" alt="avatar" title="avatar" data-testid="avatar-img" style={imageStyles} />
       </div>
       <div className="personnel-grid-subject" data-testid="personnel-grid-subject">
         <Link to="/">
