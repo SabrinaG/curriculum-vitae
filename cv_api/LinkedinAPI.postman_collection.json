@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "28862013-97ff-4b88-a59c-108beb89a793",
+		"name": "LinkedinAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9239335"
+	},
+	"item": [
+		{
+			"name": "get full profile profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"profile\":\"sabrina-guia\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "51.178.83.45:5000/full_profile",
+					"host": [
+						"51",
+						"178",
+						"83",
+						"45"
+					],
+					"port": "5000",
+					"path": [
+						"full_profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Experience",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"profile\":\"sabrina-guia\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "51.178.83.45:5000/experience",
+					"host": [
+						"51",
+						"178",
+						"83",
+						"45"
+					],
+					"port": "5000",
+					"path": [
+						"experience"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Education",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"profile\":\"sabrina-guia\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "51.178.83.45:5000/education",
+					"host": [
+						"51",
+						"178",
+						"83",
+						"45"
+					],
+					"port": "5000",
+					"path": [
+						"education"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "guia",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "sabrina",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,40 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* .layout > * {
+  padding: 20px;
+} */
+
+.personnel {
+  width: 30%;
+  color: var(--White);
+  background-color: var(--DarkBlue);
+}
+
+.professional {
+  width: 70%;
+  color: var(--White);
+  background-color: var(--LightPurple);
+}
+
+.gallery {
+  width: 70%;
+  color: var(--White);
+  background-color: var(--LightPurple);
+}
+
+@media (max-width: 1080px) {
+  .layout {
+    flex-wrap: wrap;
+  }
+  .layout .personnel, 
+  .layout .professional,
+  .layout .gallery {
+    width: 100%;
+  }
+}

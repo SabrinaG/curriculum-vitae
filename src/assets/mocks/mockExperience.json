@@ -1,0 +1,127 @@
+{
+  "experience": [
+    {
+      "company": {
+        "employeeCountRange": {
+          "end": 200,
+          "start": 51
+        },
+        "industries": [
+          "Defense & Space"
+        ]
+      },
+      "companyLogoUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_",
+      "companyName": "EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+      "companyUrn": "urn:li:fs_miniCompany:26172",
+      "courses": [
+        "urn:li:fs_course:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,2087820950)"
+      ],
+      "description": "ATFM is a cloud based solution for Air Traffic Flow Management\nsystems. Its developed by a SCRUM team really focused on delivering\nthe best quality solution for such a specific and critical area.\nThe following stack has been used: GitLab, Java, SpringBoot, SQL, HTM\nL, CSS, Redux, JavaScript and ReactJS.\nParticipation in the following main activities:\n\u25aa    Front-end developer in ReactJS\n\u25aa    Development of a couple of rest apis for basic knowledge\nacquisition of back-end structure",
+      "entityUrn": "urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637907582)",
+      "geoLocationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "geoUrn": "urn:li:fs_geo:100914661",
+      "locationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "region": "urn:li:fs_region:(pt,0)",
+      "timePeriod": {
+        "startDate": {
+          "month": 2,
+          "year": 2019
+        }
+      },
+      "title": "Software Component Engineer"
+    },
+    {
+      "company": {
+        "employeeCountRange": {
+          "end": 200,
+          "start": 51
+        },
+        "industries": [
+          "Defense & Space"
+        ]
+      },
+      "companyLogoUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_",
+      "companyName": "EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+      "companyUrn": "urn:li:fs_miniCompany:26172",
+      "description": "CleanSeaNet is the Near Real Time European satellite based oil spill\nmonitoring and vessel detection service. EDISOFT is part of the\nconsortium that provides the service to the participating coastal states\nand to EMSA.\nThe following technologies have been used: GitLab, Python, Bash,\nHTML, Bootstrap, CSS and AngularJS.\nParticipation in the following main activities:\n\u25aa    Development of a monitoring tool for interaction with the jobs\nrunning in the system and check their status.\n\u25aa    Development of software to manage the archiving system.",
+      "entityUrn": "urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637912110)",
+      "geoLocationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "geoUrn": "urn:li:fs_geo:100914661",
+      "locationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "region": "urn:li:fs_region:(pt,0)",
+      "timePeriod": {
+        "endDate": {
+          "month": 2,
+          "year": 2019
+        },
+        "startDate": {
+          "month": 8,
+          "year": 2017
+        }
+      },
+      "title": "Software Component Engineer"
+    },
+    {
+      "company": {
+        "employeeCountRange": {
+          "end": 200,
+          "start": 51
+        },
+        "industries": [
+          "Defense & Space"
+        ]
+      },
+      "companyLogoUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_",
+      "companyName": "EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+      "companyUrn": "urn:li:fs_miniCompany:26172",
+      "description": "IPSentinel is a platform based on ESA data hub that allows users to\nhave access to Sentinel satellites images on the Portugal area of\ninterest as well as product from SNIG, SNIAMB and SNIMAR\ncatalogues. EDISOFT is responsible for delivering processed images in\nSanta Maria, Azores, ground station.\nThe following technologies have been used: GitLab, Python, Bash, HTM\nL, Bootstrap and CSS.\nParticipation in the following main activities:\n\u25aa    Development of scripts to implement the main activities of the\nsystem\n\u25aa    Development of a project presentation page.\n\u25aa    Development of system documentation.",
+      "entityUrn": "urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637908455)",
+      "geoLocationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "geoUrn": "urn:li:fs_geo:100914661",
+      "locationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "region": "urn:li:fs_region:(pt,0)",
+      "timePeriod": {
+        "endDate": {
+          "month": 8,
+          "year": 2018
+        },
+        "startDate": {
+          "month": 8,
+          "year": 2016
+        }
+      },
+      "title": "Software Component Engineer"
+    },
+    {
+      "company": {
+        "employeeCountRange": {
+          "end": 200,
+          "start": 51
+        },
+        "industries": [
+          "Defense & Space"
+        ]
+      },
+      "companyLogoUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQE63Mt4PjRwxA/company-logo_",
+      "companyName": "EDISOFT - DEFENCE & AEROSPACE TECHNOLOGIES",
+      "companyUrn": "urn:li:fs_miniCompany:26172",
+      "description": "LSA SAF is a project sponsored by EUMETSAT and is currently focused\non the collection of data from MSG and EPS satellites and, in the\nfuture, MTG and EPS-SG. In order to respond to a wide community of\nusers, the need to acquire this information has led to the development\nof information systems in environments such as meteorology and\nclimate modeling, soils, disaster management and detection of climate\nchange. Since the beginning of the project, EDISOFT is responsible for\ndesigning, implementing, developing, verifying, validating and\nmaintaining the data processing and dissemination system under an\ninternational consortium led by IPMA.\nThe following technologies have been used: Visio, Entreprise Architect,\necFlow, OGE/SGE, Celery, SLURM, GitLab, Python, Bash and SQL.\nParticipation in the following main activities:\n\u25aa    Design of the system architecture.\n\u25aa    Prototyping for system upgrade.\n\u25aa    Development of software components.\n\u25aa    Database maintenance.\n\u25aa    Support to operational activities.\n\u25aa    Development of system documentation.",
+      "entityUrn": "urn:li:fs_position:(ACoAAAZzCJMBd_tbq7vxD0BZd9jgBr58NLm6wA8,1637909159)",
+      "geoLocationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "geoUrn": "urn:li:fs_geo:100914661",
+      "locationName": "Pa\u00e7o de Arcos, Lisboa, Portugal",
+      "region": "urn:li:fs_region:(pt,0)",
+      "timePeriod": {
+        "endDate": {
+          "month": 8,
+          "year": 2018
+        },
+        "startDate": {
+          "month": 2,
+          "year": 2016
+        }
+      },
+      "title": "Software Component Engineer"
+    }
+  ]
+}

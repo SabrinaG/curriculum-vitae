@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: var(--LightPurple);
+  font-family: Helvetica, Source Sans Pro, sans-serif, Arial cursive;
+}
