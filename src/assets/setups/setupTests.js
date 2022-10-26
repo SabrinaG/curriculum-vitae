@@ -3,8 +3,8 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import nock from 'nock';
-import { ErrorHandler } from '../utils/ErrorHandler'
-import { backendApi } from '../constants'
+import { ErrorHandler } from '../utils/ErrorHandler';
+import { backendApi } from '../themes/constants';
 
 const API_BASE_URL = backendApi.API_HEADER + backendApi.API_IP + backendApi.API_PORT;
 

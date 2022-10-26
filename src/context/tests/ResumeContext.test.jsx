@@ -1,4 +1,3 @@
-import React from 'react'; 
 import { renderHook } from '@testing-library/react-hooks';
 import { useResumeDefaultContext } from '../ResumeContext';
 
@@ -11,6 +10,10 @@ describe('useResumeDefaultContext.ResumeContext tests', () => {
   });
 
   it('Should create the context', () => {
+    expect(ctx.current.toogleSelectedTheme).toBeDefined();
+    expect(ctx.current.getSelectedTheme).toBeDefined();
+    expect(ctx.current.selectedTheme).toBeDefined();
+    expect(ctx.current.setSelectedTheme).toBeDefined();
     expect(ctx.current.name).toBeDefined();
     expect(ctx.current.role).toBeDefined();
     expect(ctx.current.setName).toBeDefined();
