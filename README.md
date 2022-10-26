@@ -68,8 +68,10 @@ Builds the app for production to the `build` folder.
 |`grid`                              |`audit`                             |
 |`event handling`                    |`CI/CD`                             | 
 |`fireEvent` and `userEvent`         |`webpack`                           |
-|`server mocking with nock`          |`light/dak theme`                   |
-|`routing`                           |`test snapshot`                     | 
+|`server mocking with nock`          |`test snapshot`                     |
+|`styled-components`                 |                                    |
+|`light/dak theme`                   |                                    |
+|`routing`                           |                                    | 
 |`suspender`                         |                                    | 
 |`material-ui`                       |                                    | 
 |`material-icons`                    |                                    | 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
-import { PersonnelInfo, SkillsList } from '../../../assets/constants';
+import { PersonnelInfo, SkillsList } from '../../../assets/themes/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
 import Professional from '../Professional';

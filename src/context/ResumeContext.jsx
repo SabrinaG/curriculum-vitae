@@ -2,17 +2,48 @@
 /* eslint-disable global-require */
 import React, { useState, createContext, useContext } from 'react';
 import PropTypes from 'prop-types';
-import { PersonnelInfo } from '../assets/constants';
+import { LightTheme, DarkTheme } from '../assets/themes/Themes.styled';
+import { ThemesOptions, PersonnelInfo } from '../assets/themes/constants';
 
 const ResumeContext = createContext();
 
 export const useResumeDefaultContext = () => {
   const jsonData = require('../assets/mocks/linkedin.json');
 
+  const [selectedTheme, setSelectedTheme] = useState(ThemesOptions.LIGHT);
   const [name, setName] = useState(`${jsonData.firstName} ${jsonData.lastName}`);
   const [role, setRole] = useState(PersonnelInfo.ROLE);
 
+  const toogleSelectedTheme = () => {
+    switch (selectedTheme) {
+      case ThemesOptions.LIGHT:
+        setSelectedTheme(ThemesOptions.DARK);
+        break;
+      case ThemesOptions.DARK:
+        setSelectedTheme(ThemesOptions.LIGHT);
+        break;
+      default:
+        setSelectedTheme(ThemesOptions.LIGHT);
+        break;
+    }
+  };
+
+  const getSelectedTheme = () => {
+    switch (selectedTheme) {
+      case ThemesOptions.LIGHT:
+        return LightTheme;
+      case ThemesOptions.DARK:
+        return DarkTheme;
+      default:
+        return LightTheme;
+    }
+  };
+
   return {
+    toogleSelectedTheme,
+    getSelectedTheme,
+    selectedTheme,
+    setSelectedTheme,
     name,
     setName,
     role,

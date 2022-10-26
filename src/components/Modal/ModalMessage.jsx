@@ -11,7 +11,7 @@ const modalMessage = ({ modalTitle, modalText, handleClose }) => (
           { modalTitle && <h1 data-testid="h1-title">{modalTitle}</h1>}
         </div>
         <div className="modal-button" data-testid="modal-button">
-          <button onClick={handleClose} type="button" title="close" className="close-button" data-testid="close-button">
+          <button onClick={() => handleClose(false)} type="button" title="close" className="close-button" data-testid="close-button">
             <i className="material-icons close-icon"> close </i>
           </button>
         </div>

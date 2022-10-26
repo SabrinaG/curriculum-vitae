@@ -11,7 +11,7 @@ const modalFrame = ({ handleClose }) => (
       <div className="modal-header" data-testid="modal-header">
         <div className="fullscreen-icon-button" data-testid="fullscreen-icon-button">
           <button type="button" title="full screen" className="full-screen-button" data-testid="full-screen">
-            <a href={require('../../assets/cv.pdf')} target="_blank" rel="noreferrer" data-testid="full-screen-button">
+            <a href={require('../../assets/files/cv.pdf')} target="_blank" rel="noreferrer" data-testid="full-screen-button">
               <i className="material-icons full-screen-icon"> fullscreen </i>
             </a>
           </button>

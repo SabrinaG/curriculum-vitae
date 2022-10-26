@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import nock from 'nock';
 import { fetchProfileInfo, fetchExperienceInfo, fetchEducationInfo } from '../actions';
-import { API_BASE_URL, PersonnelInfo, backendApi } from '../../../assets/constants';
+import { API_BASE_URL, PersonnelInfo, backendApi } from '../../../assets/themes/constants';
 import { configureTestStore, filterAction } from '../../../assets/utils/tests.utils';
 import mockFullProfile from '../../../assets/mocks/mockFullProfile.json';
 import mockExperience from '../../../assets/mocks/mockExperience.json';

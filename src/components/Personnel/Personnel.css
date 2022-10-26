@@ -24,7 +24,7 @@
 .personnel-grid-subject {
     background-color: var(--LightBlack);
     border: 1px solid var(--Black);
-    color: var(--LightPurple);
+    /* color: var(--LightPurple); */
     text-align: center;
     width: 80%;
     padding: 20px;
@@ -34,12 +34,14 @@
 }
 
 .personnel-grid-name { 
+    color: var(--White);
     font-size: 30px;
     font-weight: bold;
     height: 70%;
 }
 
 .personnel-grid-role { 
+    color: var(--White);
     font-size: 15px;
     height: 30%;
 }
@@ -62,6 +64,7 @@
 
 .personnel-info-grid-header {
     background-color: var(--LightBlack);
+    color: var(--White);
     grid-area: header;
     text-align: center;
     font-size: 20px;
@@ -84,14 +87,26 @@
     padding: 0;
 }
 
-a.link,
-a.link:visited,
-a:-webkit-any-link {
-    color: var(--White);
+a.link.lightTheme,
+a.link:visited.lightTheme,
+a:-webkit-any-link.lightTheme {
     text-decoration: none;
+    color: var(--White);
 }
 
-a.link:hover,
-a:-webkit-any-link:hover {
+a.link:hover.lightTheme,
+a:-webkit-any-link:hover.lightTheme {
     color: var(--LightPurple);
+}
+
+a.link.darkTheme,
+a.link:visited.darkTheme,
+a:-webkit-any-link.darkTheme {
+    text-decoration: none;
+    color: var(--Black);
+}
+
+a.link:hover.darkTheme,
+a:-webkit-any-link:hover.darkTheme {
+    color: var(--DarkGrey);
 }

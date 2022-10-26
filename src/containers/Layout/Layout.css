@@ -10,23 +10,23 @@
   padding: 20px;
 } */
 
-.personnel {
+/* .personnel {
   width: 30%;
   color: var(--White);
   background-color: var(--DarkBlue);
-}
+} */
 
-.professional {
+/* .professional {
   width: 70%;
   color: var(--White);
   background-color: var(--LightPurple);
-}
+} */
 
-.gallery {
+/* .gallery {
   width: 70%;
   color: var(--White);
   background-color: var(--LightPurple);
-}
+} */
 
 @media (max-width: 1080px) {
   .layout {

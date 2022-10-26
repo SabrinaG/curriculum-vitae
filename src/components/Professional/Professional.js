@@ -14,13 +14,15 @@ import {
   selectInternshipData,
   selectEducationData,
 } from '../../store/profile/selectors';
-import { SkillsList, EntetiesLinks, ProjectsLinks, PersonnelInfo, SET_TIMER } from '../../assets/constants';
+import { SkillsList, EntetiesLinks, ProjectsLinks, PersonnelInfo, SET_TIMER } from '../../assets/themes/constants';
+import { useResumeContext } from '../../context/ResumeContext';
 import './Professional.css';
 
 const logoStyles = { width: '5em', height: '5em' };
 
 function Professional() {
   const dispatch = useDispatch();
+  const resumeContext = useResumeContext();
 
   const [loadingState, setLoadingState] = useState(true);
   const [errorState, setErrorState] = useState(null);
@@ -61,15 +63,23 @@ function Professional() {
     <div>
       <div className="professional-grid-container" data-testid="professional-grid-container">
 
-        <div className="professional-info-grid-container" data-testid="professional-experience-container">
-          <div className="professional-info-grid-header" data-testid="professional-experience-header">EXPERIENCE</div>
+        <div className={`professional-info-grid-container ${resumeContext.selectedTheme}`} data-testid="professional-experience-container">
+          <div className={`professional-info-grid-header ${resumeContext.selectedTheme}`} data-testid="professional-experience-header">EXPERIENCE</div>
           {experienceData && Object.keys(experienceData).map((company, companyIndex) => (Object.keys(experienceData[company]).map((project, projectIndex) => (
             <Fragment key={`xp-${companyIndex}-${projectIndex}`}>
               <div className="professional-info-grid-date" data-testid="professional-experience-date">
                 {`${experienceData[company][project].start} to ${experienceData[company][project].stop}`}
               </div>
               <div className="professional-info-grid-info" data-testid="professional-experience-info">
-                <a className="pj-link" data-testid="experience-link" href={ProjectsLinks[project]} target="_blank" rel="noreferrer">{`${project}`}</a>
+                <a
+                  className={`pj-link ${resumeContext.selectedTheme}`}
+                  data-testid="experience-link"
+                  href={ProjectsLinks[project]}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {`${project}`}
+                </a>
               </div>
               {companyIndex === 0 && projectIndex === 0 &&
                 <div className="professional-info-grid-logo" data-testid="professional-experience-logo">
@@ -86,8 +96,8 @@ function Professional() {
           ))))}
         </div>
 
-        <div className="professional-info-grid-container" data-testid="professional-internship-container">
-          <div className="professional-info-grid-header" data-testid="professional-info-grid-header">INTERNSHIP</div>
+        <div className={`professional-info-grid-container ${resumeContext.selectedTheme}`} data-testid="professional-internship-container">
+          <div className={`professional-info-grid-header ${resumeContext.selectedTheme}`} data-testid="professional-info-grid-header">INTERNSHIP</div>
           <div className="professional-info-grid-date" data-testid="professional-info-grid-date">
             <div>24/03/2015 – 22/05/2015</div>
           </div>
@@ -101,14 +111,14 @@ function Professional() {
             <div className="sub-title" data-testid="sub-title">Extra-curricular Training</div>
           </div>
           <div className="professional-info-grid-logo" data-testid="professional-info-grid-logo">
-            <a className="pj-link" data-testid="pj-link" href={EntetiesLinks.UNISA} target="_blank" rel="noreferrer">
+            <a className={`pj-link ${resumeContext.selectedTheme}`} data-testid="pj-link" href={EntetiesLinks.UNISA} target="_blank" rel="noreferrer">
               <img src={unisa} alt="UNISA" title="UNISA" style={logoStyles} />
             </a>
           </div>
         </div>
 
-        <div className="professional-info-grid-container" data-testid="professional-education-container">
-          <div className="professional-info-grid-header" data-testid="professional-info-grid-header">EDUCATION</div>
+        <div className={`professional-info-grid-container ${resumeContext.selectedTheme}`} data-testid="professional-education-container">
+          <div className={`professional-info-grid-header ${resumeContext.selectedTheme}`} data-testid="professional-info-grid-header">EDUCATION</div>
           <div className="professional-info-grid-date" data-testid="professional-info-grid-date">16/09/2013 – 15/10/2015</div>
           <div className="professional-info-grid-info" data-testid="professional-info-grid-info">
             <div className="title" data-testid="title">Electrical and Computer Engineering - Bionic Systems</div>
@@ -120,14 +130,14 @@ function Professional() {
             <div className="sub-title" data-testid="sub-title">Bachelor Degree</div>
           </div>
           <div className="professional-info-grid-logo" data-testid="professional-info-grid-logo">
-            <a className="pj-link" data-testid="pj-link" href={EntetiesLinks.UBI} target="_blank" rel="noreferrer">
+            <a className={`pj-link ${resumeContext.selectedTheme}`} data-testid="pj-link" href={EntetiesLinks.UBI} target="_blank" rel="noreferrer">
               <img src={ubi} alt="UBI" title="UBI" style={logoStyles} />
             </a>
           </div>
         </div>
 
         <div className="professional-info-grid-container-skills" data-testid="professional-skills-container">
-          <div className="professional-info-grid-header" data-testid="professional-info-grid-header">SKILLS</div>
+          <div className={`professional-info-grid-header ${resumeContext.selectedTheme}`} data-testid="professional-info-grid-header">SKILLS</div>
           <div className="professional-logo-grid" data-testid="professional-logo-grid">
             {Object.keys(SkillsList).map((skill, index) => (
               <Fragment key={`sk-${index}`}>
@@ -145,8 +155,8 @@ function Professional() {
           </div>
         </div>
 
-        <div className="professional-info-grid-container" data-testid="professional-driving-container">
-          <div className="professional-info-grid-header" data-testid="professional-info-grid-header">DRIVING LICENCE</div>
+        <div className={`professional-info-grid-container ${resumeContext.selectedTheme}`} data-testid="professional-driving-container">
+          <div className={`professional-info-grid-header ${resumeContext.selectedTheme}`} data-testid="professional-info-grid-header">DRIVING LICENCE</div>
           <div className="professional-info-grid-date" data-testid="professional-info-grid-date" />
           <div className="professional-info-grid-info" data-testid="professional-info-grid-info">{PersonnelInfo.LICENCE}</div>
         </div>

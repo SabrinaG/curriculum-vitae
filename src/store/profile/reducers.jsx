@@ -4,7 +4,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchProfileInfo, fetchExperienceInfo, fetchEducationInfo } from './actions';
 import { calcAge } from '../../assets/utils/func.utils';
-import { PersonnelInfo, ContactsInfo } from '../../assets/constants';
+import { PersonnelInfo, ContactsInfo } from '../../assets/themes/constants';
 
 const initialState = {
   loading_profile: true,

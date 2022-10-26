@@ -1,5 +1,5 @@
 import callApi from '../api/services';
-import { API_BASE_URL, PROFILE_NAME, backendApi } from '../../assets/constants';
+import { API_BASE_URL, PROFILE_NAME, backendApi } from '../../assets/themes/constants';
 
 const postMethod = { basePath: API_BASE_URL, method: 'POST', body: JSON.stringify({ profile: `${PROFILE_NAME}` }) };
 

@@ -1,19 +1,38 @@
+// import React from 'react';
 import React, { Component } from 'react';
+import { ThemeProvider } from 'styled-components';
 import Personnel from '../../components/Personnel/Personnel';
 import Professional from '../../components/Professional/Professional';
+import ToogleButton from '../../components/Buttons/ToogleButton';
+import InfoButton from '../../components/Buttons/InfoButton';
+import { SyledButtons } from '../../components/Buttons/Buttons.styled';
+import { StyledPersonnel, StyledProfessional } from '../../assets/themes/Components.styled';
+// import { useResumeContext } from '../../context/ResumeContext';
+import ResumeContext from '../../context/ResumeContext';
 import './Layout.css';
 
+const renderInfoLayout = selectedTheme => (
+  <ThemeProvider theme={selectedTheme}>
+    <div className="layout" data-testid="layout">
+      <StyledPersonnel data-testid="personnel">
+        <Personnel />
+      </StyledPersonnel>
+      <StyledProfessional data-testid="professional">
+        <SyledButtons data-testid="styled-buttons">
+          <InfoButton />
+          <ToogleButton />
+        </SyledButtons>
+        <Professional />
+      </StyledProfessional>
+    </div>
+  </ThemeProvider>
+);
+
 // ===== FUNCTIONAL COMPONENT SRC CODE =====
-// function Layout() {
+// function InfoLayout() {
+//   const resumeContext = useResumeContext();
 //   return (
-//     <div className="layout" data-testid="layout">
-//       <div className="personnel" data-testid="personnel">
-//         <Personnel />
-//       </div>
-//       <div className="professional" data-testid="professional">
-//         <Professional />
-//       </div>
-//     </div>
+//     renderInfoLayout(resumeContext.getSelectedTheme())
 //   );
 // }
 
@@ -22,16 +41,11 @@ import './Layout.css';
 export class InfoLayout extends Component {
   render() {
     return (
-      <div className="layout" data-testid="layout">
-        <div className="personnel" data-testid="personnel">
-          <Personnel />
-        </div>
-        <div className="professional" data-testid="professional">
-          <Professional />
-        </div>
-      </div>
+      renderInfoLayout(this.context.getSelectedTheme())
     );
   }
 }
+
+InfoLayout.contextType = ResumeContext;
 
 export default InfoLayout;

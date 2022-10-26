@@ -23,14 +23,14 @@ import ErrorBoundary from '../../containers/ErrorBoundary/ErrorBoundary';
 import LoadingSpinner from '../../containers/LoadingSpinner/LoadingSpinner';
 import { fetchProfileInfo } from '../../store/profile/actions';
 import { selectLoadingProfileInfo, selectProfileInfo, selectProfileData } from '../../store/profile/selectors';
-import { ContactsInfo, LanguagesInfo, HobbiesInfo, SET_TIMER } from '../../assets/constants';
+import { ContactsInfo, LanguagesInfo, HobbiesInfo, SET_TIMER } from '../../assets/themes/constants';
 import './Personnel.css';
 
 const imageStyles = { width: '250px', height: '250px', borderRadius: '50%' };
-const iconStyles = { width: '0.8em', height: '0.8em', color: 'white' };
+const iconStyles = { width: '0.8em', height: '0.8em' };
 const flagStyles = { width: '1.5em', height: '1.5em' };
 
-const myCV = require('../../assets/cv.pdf');
+const myCV = require('../../assets/files/cv.pdf');
 
 function Personnel() {
   const dispatch = useDispatch();
@@ -155,7 +155,7 @@ function Personnel() {
         <img ref={refMessage} src={avatar} alt="avatar" title="avatar" data-testid="avatar-img" style={imageStyles} />
       </div>
       <div className="personnel-grid-subject" data-testid="personnel-grid-subject">
-        <Link to="/">
+        <Link className={`link ${resumeContext.selectedTheme}`} to="/">
           <div className="personnel-grid-name" data-testid="personnel-grid-name">
             {(profileInfo && profileInfo?.name) || resumeContext.name}
           </div>
@@ -178,7 +178,7 @@ function Personnel() {
             <PhoneIphone style={iconStyles} />
           </div>
           <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">
-            <a className="link" data-testid="phone" href={`tel: ${ContactsInfo.PHONE}`}>
+            <a className={`link ${resumeContext.selectedTheme}`} data-testid="phone" href={`tel: ${ContactsInfo.PHONE}`}>
               {(profileInfo && profileInfo?.phone_number) || ContactsInfo.PHONE}
             </a>
           </div>
@@ -186,7 +186,7 @@ function Personnel() {
             <Email style={iconStyles} />
           </div>
           <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">
-            <a className="link" data-testid="email" href={`mailto: ${ContactsInfo.EMAIL}`}>
+            <a className={`link ${resumeContext.selectedTheme}`} data-testid="email" href={`mailto: ${ContactsInfo.EMAIL}`}>
               {(profileInfo && profileInfo?.e_mail) || ContactsInfo.EMAIL}
             </a>
           </div>
@@ -197,20 +197,20 @@ function Personnel() {
           <div className="personnel-info-grid-icon" data-testid="personnel-info-grid-icon">
             <GitHub style={iconStyles} />
           </div>
-          <a className="link" data-testid="github" href={ContactsInfo.GITHUB} target="_blank" rel="noreferrer">
+          <a className={`link ${resumeContext.selectedTheme}`} data-testid="github" href={ContactsInfo.GITHUB} target="_blank" rel="noreferrer">
             <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">Git repo</div>
           </a>
           <div className="personnel-info-grid-icon" data-testid="personnel-info-grid-icon">
             <LinkedIn style={iconStyles} />
           </div>
-          <a className="link" data-testid="linkedin" href={ContactsInfo.LINKEDIN} target="_blank" rel="noreferrer">
+          <a className={`link ${resumeContext.selectedTheme}`} data-testid="linkedin" href={ContactsInfo.LINKEDIN} target="_blank" rel="noreferrer">
             <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">LinkedIn profile</div>
           </a>
           <div className="personnel-info-grid-icon" data-testid="personnel-info-grid-icon">
             <CloudDownload style={iconStyles} />
           </div>
           <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">
-            <a className="link" data-testid="cv" ref={refFrame} href={myCV} download="cv_sguia.pdf">Curriculum Vitae</a>
+            <a className={`link ${resumeContext.selectedTheme}`} data-testid="cv" ref={refFrame} href={myCV} download="cv_sguia.pdf">Curriculum Vitae</a>
           </div>
         </div>
 
@@ -249,7 +249,7 @@ function Personnel() {
           <div className="personnel-info-grid-icon" data-testid="personnel-info-grid-icon">
             <PhotoCamera style={iconStyles} />
           </div>
-          <Link to="/gallery" className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</Link>
+          <Link to="/gallery" className={`link ${resumeContext.selectedTheme} personnel-info-grid-info`} data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</Link>
           {/* <div className="personnel-info-grid-info" data-testid="personnel-info-grid-info">{HobbiesInfo[3]}</div> */}
         </div>
       </div>

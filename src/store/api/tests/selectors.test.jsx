@@ -1,5 +1,5 @@
 import { CustomError } from '../../../assets/utils/CustomError';
-import { API_BASE_URL } from '../../../assets/constants';
+import { API_BASE_URL } from '../../../assets/themes/constants';
 import {
   selectApi,
   selectApiType,

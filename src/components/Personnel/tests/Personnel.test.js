@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen, within, fireEvent } from '@testing-library/react';
-import { PersonnelInfo, ContactsInfo, LanguagesInfo } from '../../../assets/constants';
+import { PersonnelInfo, ContactsInfo, LanguagesInfo } from '../../../assets/themes/constants';
 import { configureTestStore, renderWithProviders } from '../../../assets/utils/tests.utils';
 import mockStore from '../../../assets/mocks/mockStore.json';
 import Personnel from '../Personnel';
