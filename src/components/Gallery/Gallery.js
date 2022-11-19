@@ -1,4 +1,5 @@
-import React from 'react';
+// import React from 'react';
+import React, { useEffect } from 'react';
 import Imgix from 'react-imgix';
 
 import croatiaZagreb from '../../assets/photos/croatia_zagreb.jpeg';
@@ -29,6 +30,28 @@ const photoList = [
 ];
 
 function Gallery() {
+  useEffect(() => {
+    const lazyLoadingOptions = {
+      rootMargin: '0px',
+      threshold: 1.0,
+    };
+
+    const lazyImageObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { // orr if (entry.intersectionRatio > 0.9) {
+          const lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove('lazy');
+        }
+      });
+    }, lazyLoadingOptions);
+
+    const lazyImages = document.querySelectorAll('img.lzy_img');
+    lazyImages.forEach((photo) => {
+      lazyImageObserver.observe(photo);
+    });
+  }, []);
+
   return (
     <div className="gallery-container" data-testid="gallery-container">
       <Imgix
@@ -38,9 +61,12 @@ function Gallery() {
       />
       {photoList.map((photo, index) => (
         <img
-          key={index}
+          className="lzy_img"
+          loading="lazy"
+          data-src={photo}
           src={photo}
           alt={photo}
+          key={index}
         />
       ))}
     </div>

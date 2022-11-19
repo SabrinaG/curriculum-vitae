@@ -31,6 +31,7 @@
 @media (max-width: 1080px) {
   .layout {
     flex-wrap: wrap;
+    flex-direction: column;
   }
   .layout .personnel, 
   .layout .professional,
